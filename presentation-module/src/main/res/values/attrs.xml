@@ -1,72 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr name="colorRose" format="color" />
-    <attr name="colorOnRose" format="color" />
-    <attr name="colorRoseContainer" format="color" />
-    <attr name="colorOnRoseContainer" format="color" />
-    <attr name="harmonizeRose" format="boolean" />
+  <attr name="colorRose" format="color"/>
+  <attr name="colorOnRose" format="color"/>
+  <attr name="colorRoseContainer" format="color"/>
+  <attr name="colorOnRoseContainer" format="color"/>
+  <attr name="harmonizeRose" format="boolean"/>
 
-    <attr name="colorLeaf" format="color" />
-    <attr name="colorOnLeaf" format="color" />
-    <attr name="colorLeafContainer" format="color" />
-    <attr name="colorOnLeafContainer" format="color" />
-    <attr name="harmonizeLeaf" format="boolean" />
+  <attr name="colorLeaf" format="color"/>
+  <attr name="colorOnLeaf" format="color"/>
+  <attr name="colorLeafContainer" format="color"/>
+  <attr name="colorOnLeafContainer" format="color"/>
+  <attr name="harmonizeLeaf" format="boolean"/>
 
-    <attr name="colorCustomContainer" format="color" />
-    <attr name="colorCustomDialogBackground" format="color" />
+  <attr name="colorCustomContainer" format="color"/>
+  <attr name="colorCustomDialogBackground" format="color"/>
 
-    <!-- CUSTOM VIEW FOR PREFERENCE MENU -->
-    <declare-styleable name="CustomPreference">
-        <attr name="iconPreference" format="reference" />
-        <attr name="titlePreference" format="string" />
-        <attr name="valuePreference" format="string" />
-    </declare-styleable>
+  <!-- CUSTOM VIEW FOR PREFERENCE MENU -->
+  <declare-styleable name="CustomPreference">
+    <attr name="iconPreference" format="reference"/>
+    <attr name="titlePreference" format="string"/>
+    <attr name="valuePreference" format="string"/>
+  </declare-styleable>
 
-    <!-- CUSTOM VIEW FOR MENU BUTTON -->
-    <declare-styleable name="CustomButtonMenu">
-        <attr name="icon" format="reference" />
-        <attr name="title" format="string" />
-        <attr name="subtitle" format="string" />
-    </declare-styleable>
+  <!-- CUSTOM VIEW FOR MENU BUTTON -->
+  <declare-styleable name="CustomButtonMenu">
+    <attr name="icon" format="reference"/>
+    <attr name="title" format="string"/>
+    <attr name="subtitle" format="string"/>
+  </declare-styleable>
 
-    <declare-styleable name="CustomButtonMenuSecond">
-        <attr name="iconSecond" format="reference" />
-        <attr name="titleSecond" format="string" />
-        <attr name="hideDividerSecond" format="boolean" />
-    </declare-styleable>
+  <declare-styleable name="CustomButtonMenuSecond">
+    <attr name="iconSecond" format="reference"/>
+    <attr name="titleSecond" format="string"/>
+    <attr name="hideDividerSecond" format="boolean"/>
+  </declare-styleable>
 
-    <declare-styleable name="CustomButtonMenuThird">
-        <attr name="titleThird" format="string" />
-        <attr name="contentThird" format="string" />
-        <attr name="hideDividerThird" format="boolean" />
-    </declare-styleable>
+  <declare-styleable name="CustomButtonMenuThird">
+    <attr name="titleThird" format="string"/>
+    <attr name="contentThird" format="string"/>
+    <attr name="hideDividerThird" format="boolean"/>
+  </declare-styleable>
 
-    <declare-styleable name="CustomCheckbox">
-        <attr name="checkState" format="boolean" />
-        <attr name="titleState" format="string" />
-        <attr name="subtitleState" format="string" />
-        <attr name="hideDividerState" format="boolean" />
-    </declare-styleable>
+  <declare-styleable name="CustomCheckbox">
+    <attr name="checkState" format="boolean"/>
+    <attr name="titleState" format="string"/>
+    <attr name="subtitleState" format="string"/>
+    <attr name="hideDividerState" format="boolean"/>
+  </declare-styleable>
 
-    <declare-styleable name="CustomCardOptions">
-        <attr name="selectedColor" format="reference" />
-        <attr name="titleOptions" format="string" />
-        <attr name="subtitleOptions" format="string" />
-    </declare-styleable>
+  <declare-styleable name="CustomCardOptions">
+    <attr name="selectedColor" format="reference"/>
+    <attr name="titleOptions" format="string"/>
+    <attr name="subtitleOptions" format="string"/>
+  </declare-styleable>
 
-    <!-- CUSTOM VIEW FOR MENU -->
-    <declare-styleable name="CustomLayoutMenu">
-        <attr name="iconMenu" format="reference" />
-        <attr name="titleMenu" format="string" />
-        <attr name="contentMenu" format="string" />
-        <attr name="hideDividerMenu" format="boolean" />
-    </declare-styleable>
+  <!-- CUSTOM VIEW FOR MENU -->
+  <declare-styleable name="CustomLayoutMenu">
+    <attr name="iconMenu" format="reference"/>
+    <attr name="titleMenu" format="string"/>
+    <attr name="contentMenu" format="string"/>
+    <attr name="hideDividerMenu" format="boolean"/>
+  </declare-styleable>
 
-    <declare-styleable name="CustomLayoutItem">
-        <attr name="titleItem" format="string" />
-        <attr name="contentItem" format="string" />
-        <attr name="hideDividerItem" format="boolean" />
-    </declare-styleable>
+  <declare-styleable name="CustomLayoutItem">
+    <attr name="titleItem" format="string"/>
+    <attr name="contentItem" format="string"/>
+    <attr name="hideDividerItem" format="boolean"/>
+  </declare-styleable>
 
 
 </resources>

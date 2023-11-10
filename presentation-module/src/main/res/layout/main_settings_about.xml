@@ -1,81 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:transitionGroup="true"
-    tools:context="app.cicilan.ui.main.settings.about.AboutFragment">
+    tools:context="app.cicilan.presentation.settings.about.AboutFragment">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBar"
-        style="@style/CustomAppBar"
-        android:fitsSystemWindows="true">
+  <com.google.android.material.appbar.AppBarLayout
+      android:id="@+id/appBar"
+      style="@style/CustomAppBar"
+      android:fitsSystemWindows="true">
 
-        <com.google.android.material.appbar.CollapsingToolbarLayout
-            style="@style/CustomCollapseMedium"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/collapsingToolbarLayoutMediumSize"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
-            app:toolbarId="@id/toolbar">
-
-            <com.google.android.material.appbar.MaterialToolbar
-                android:id="@+id/toolbarAbout"
-                style="@style/ToolbarTheme"
-                app:layout_collapseMode="pin"
-                app:navigationIcon="@drawable/icon_arrow_back"
-                app:title="@string/title_about" />
-
-        </com.google.android.material.appbar.CollapsingToolbarLayout>
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <androidx.core.widget.NestedScrollView
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        style="@style/CustomCollapseMedium"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:isScrollContainer="true"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        android:layout_height="?attr/collapsingToolbarLayoutMediumSize"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+        app:toolbarId="@id/toolbar">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+      <com.google.android.material.appbar.MaterialToolbar
+          android:id="@+id/toolbarAbout"
+          style="@style/ToolbarTheme"
+          app:layout_collapseMode="pin"
+          app:navigationIcon="@drawable/icon_arrow_back"
+          app:title="@string/title_about"/>
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/appLogo"
-                android:layout_width="96dp"
-                android:layout_height="96dp"
-                android:layout_marginTop="16dp"
-                android:background="@color/seed"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Large"
-                app:srcCompat="@drawable/app_logo" />
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+  </com.google.android.material.appbar.AppBarLayout>
 
-            <TextView
-                android:id="@+id/appName"
-                style="@style/HeadingTitle"
-                android:layout_marginTop="16dp"
-                android:text="@string/laci_kelola_cicilan"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/appLogo"
-                app:layout_constraintStart_toStartOf="@+id/appLogo"
-                app:layout_constraintTop_toBottomOf="@+id/appLogo" />
+  <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fillViewport="true"
+      android:isScrollContainer="true"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-            <TextView
-                android:id="@+id/appDesc"
-                style="@style/BodyContent"
-                android:layout_width="0dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:text="@string/app_about_desc"
-                android:textAlignment="center"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/appName" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.core.widget.NestedScrollView>
+      <com.google.android.material.imageview.ShapeableImageView
+          android:id="@+id/appLogo"
+          android:layout_width="96dp"
+          android:layout_height="96dp"
+          android:layout_marginTop="16dp"
+          android:background="@color/seed"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Large"
+          app:srcCompat="@drawable/app_logo"/>
+
+      <TextView
+          android:id="@+id/appName"
+          style="@style/HeadingTitle"
+          android:layout_marginTop="16dp"
+          android:text="@string/laci_kelola_cicilan"
+          android:textStyle="bold"
+          app:layout_constraintEnd_toEndOf="@+id/appLogo"
+          app:layout_constraintStart_toStartOf="@+id/appLogo"
+          app:layout_constraintTop_toBottomOf="@+id/appLogo"/>
+
+      <TextView
+          android:id="@+id/appDesc"
+          style="@style/BodyContent"
+          android:layout_width="0dp"
+          android:layout_marginStart="24dp"
+          android:layout_marginEnd="24dp"
+          android:text="@string/app_about_desc"
+          android:textAlignment="center"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/appName"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </androidx.core.widget.NestedScrollView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

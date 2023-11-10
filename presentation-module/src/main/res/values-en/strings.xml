@@ -1,160 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Button -->
-    <string name="add_item_button_desc">add item</string>
-    <string name="no_data_current">No cicilan record yet</string>
-    <string name="no_data_current_message">You haven\’t cicilan record. To add record, hit the + add cicilan button in the bottom of right corner.</string>
-    <string name="no_data_done">No cicilan done record yet</string>
-    <string name="no_data_done_message">You haven\’t cicilan done record. The cicilan done record will appear here.</string>
-    <string name="save_button_title">Save</string>
-    <string name="save_button_desc">save button</string>
-    <string name="choose_image_from">Choose image from</string>
-    <string name="internal_storage">Internal file</string>
-    <string name="camera">Camera</string>
-    <string name="cancel_button">Cancel</string>
-    <string name="ok_button">OK</string>
-    <string name="delete_button">Delete</string>
-    <string name="pay_debt">Pay debt</string>
-    <!-- Button -->
 
-    <!-- Form validation -->
-    <string name="fill_data">Shouldn\’t be empty</string>
-    <string name="form_date_tenggat">more than 30 days of calendar</string>
-    <string name="form_date_periode">Period more than 12 months</string>
-    <string name="form_min_harga" tools:keep="@string/form_min_harga">Price min. 500K</string>
-    <string name="form_max_harga">Price max. 10 billion</string>
-    <string name="form_dp">First pay min. 300 hundred</string>
-    <string name="form_dp_lessThan_harga">Should less than thing price</string>
-    <string name="input_fill_over">Over than remain amount</string>
-    <string name="input_min_limit">Pay min. 100 hundred</string>
-    <string name="filled_price">Filled the thing price first</string>
-    <string name="pic_thing">Picture stuff</string>
-    <!-- Form validation -->
+  <!-- Button -->
+  <string name="add_item_button_desc">add item</string>
+  <string name="no_data_current">No cicilan record yet</string>
+  <string name="no_data_current_message">You haven\’t cicilan record. To add record, hit the + add cicilan button in the
+    bottom of right corner.
+  </string>
+  <string name="no_data_done">No cicilan done record yet</string>
+  <string name="no_data_done_message">You haven\’t cicilan done record. The cicilan done record will appear here.
+  </string>
+  <string name="save_button_title">Save</string>
+  <string name="save_button_desc">save button</string>
+  <string name="choose_image_from">Choose image from</string>
+  <string name="internal_storage">Internal file</string>
+  <string name="camera">Camera</string>
+  <string name="cancel_button">Cancel</string>
+  <string name="ok_button">OK</string>
+  <string name="delete_button">Delete</string>
+  <string name="pay_debt">Pay debt</string>
+  <!-- Button -->
 
-    <!-- Confirm dialog -->
-    <string name="confirm_delete_data">Are you sure want to delete ?</string>
-    <!-- Confirm dialog -->
+  <!-- Form validation -->
+  <string name="fill_data">Shouldn\’t be empty</string>
+  <string name="form_date_tenggat">more than 30 days of calendar</string>
+  <string name="form_date_periode">Period more than 12 months</string>
+  <string name="form_min_harga" tools:keep="@string/form_min_harga">Price min. 500K</string>
+  <string name="form_max_harga">Price max. 10 billion</string>
+  <string name="form_dp">First pay min. 300 hundred</string>
+  <string name="form_dp_lessThan_harga">Should less than thing price</string>
+  <string name="input_fill_over">Over than remain amount</string>
+  <string name="input_min_limit">Pay min. 100 hundred</string>
+  <string name="filled_price">Filled the thing price first</string>
+  <string name="pic_thing">Picture stuff</string>
+  <!-- Form validation -->
 
-    <!-- Home Menu -->
-    <string name="debt_now">Done yet</string>
-    <string name="debt_done">Done</string>
-    <!-- Home Menu -->
+  <!-- Confirm dialog -->
+  <string name="confirm_delete_data">Are you sure want to delete ?</string>
+  <!-- Confirm dialog -->
 
-    <!-- Add Item Menu -->
-    <string name="penyicil">Person</string>
-    <string name="barang">Thing</string>
-    <string name="User_name">Nama person</string>
-    <string name="User_thing">Nama stuff</string>
-    <string name="User_category">Category</string>
-    <string name="User_price">Price</string>
-    <string name="User_first_pay">First pay</string>
-    <string name="User_duration_pay">Period of cicilan</string>
-    <string name="User_period_date">Expired on</string>
-    <string name="cancel_direction">Canceled</string>
-    <string name="add_item_image_desc">Add item image preview</string>
-    <string name="add_data">Add cicilan</string>
-    <!-- Add Item Menu -->
+  <!-- Home Menu -->
+  <string name="debt_now">Done yet</string>
+  <string name="debt_done">Done</string>
+  <!-- Home Menu -->
 
-    <!-- Category Item -->
-    <string-array name="data_category">
-        <item>Hand phone</item>
-        <item>Laptop</item>
-        <item>Kulkas</item>
-        <item>Mesin cuci</item>
-        <item>Lemari</item>
-        <item>Kursi</item>
-        <item>Meja</item>
-        <item>Karpet</item>
-        <item>Pendingin (AC)</item>
-    </string-array>
-    <!-- Category Item -->
+  <!-- Add Item Menu -->
+  <string name="penyicil">Person</string>
+  <string name="barang">Thing</string>
+  <string name="User_name">Nama person</string>
+  <string name="User_thing">Nama stuff</string>
+  <string name="User_category">Category</string>
+  <string name="User_price">Price</string>
+  <string name="User_first_pay">First pay</string>
+  <string name="User_duration_pay">Period of cicilan</string>
+  <string name="User_period_date">Expired on</string>
+  <string name="cancel_direction">Canceled</string>
+  <string name="add_item_image_desc">Add item image preview</string>
+  <string name="add_data">Add cicilan</string>
+  <!-- Add Item Menu -->
 
-    <!-- Crop Image -->
-    <string name="rotate">Rotate</string>
-    <string name="crop_image">Crop image</string>
-    <!-- Crop Image -->
+  <!-- Category Item -->
+  <string-array name="data_category">
+    <item>Hand phone</item>
+    <item>Laptop</item>
+    <item>Kulkas</item>
+    <item>Mesin cuci</item>
+    <item>Lemari</item>
+    <item>Kursi</item>
+    <item>Meja</item>
+    <item>Karpet</item>
+    <item>Pendingin (AC)</item>
+  </string-array>
+  <!-- Category Item -->
 
-    <!-- Dialog Lunas -->
-    <string name="lunas_at">Done at</string>
-    <!-- Dialog Lunas -->
+  <!-- Crop Image -->
+  <string name="rotate">Rotate</string>
+  <string name="crop_image">Crop image</string>
+  <!-- Crop Image -->
 
-    <!-- Detail Item Menu -->
-    <string name="avatar_preview_desc">Image preview</string>
-    <string name="created_at_title">Debting at</string>
-    <string name="sisa">Remaining</string>
-    <string name="detail_laba">Detail laba</string>
-    <string name="laba">Laba per month</string>
-    <string name="per_bulan">/month</string>
-    <string name="total_laba">Total laba</string>
-    <string name="detail_nominal">Detail debt</string>
-    <string name="user_nominal_cicilan">amount of debt</string>
-    <string name="per_bulan_bayar">Per month</string>
-    <string name="total_per_bulan">Total per month</string>
-    <string name="expire_periode">Pay at</string>
-    <string name="log_transaction">See transaction</string>
-    <string name="deleted_successfully">deleted Successfully</string>
+  <!-- Dialog Lunas -->
+  <string name="lunas_at">Done at</string>
+  <!-- Dialog Lunas -->
 
-    <string name="fill_periode_max" tools:keep="@string/fill_periode_max">Pay per month periode</string>
-    <string name="input_over">Over as expect</string>
-    <string name="input_nominal" tools:keep="@string/input_nominal">Input amount</string>
-    <string name="calculate_result" tools:keep="@string/calculate_result">Provisional count</string>
-    <string name="cicilan_per_bulan">Debt per month</string>
+  <!-- Detail Item Menu -->
+  <string name="avatar_preview_desc">Image preview</string>
+  <string name="created_at_title">Debting at</string>
+  <string name="sisa">Remaining</string>
+  <string name="detail_laba">Detail laba</string>
+  <string name="laba">Laba per month</string>
+  <string name="per_bulan">/month</string>
+  <string name="total_laba">Total laba</string>
+  <string name="detail_nominal">Detail debt</string>
+  <string name="user_nominal_cicilan">amount of debt</string>
+  <string name="per_bulan_bayar">Per month</string>
+  <string name="total_per_bulan">Total per month</string>
+  <string name="expire_periode">Pay at</string>
+  <string name="log_transaction">See transaction</string>
+  <string name="deleted_successfully">deleted Successfully</string>
 
-    <string name="choose_image_here" tools:keep="@string/choose_image_here">Choose image from here</string>
-    <string name="proses_cicilan" tools:keep="@string/proses_cicilan">Proses cicilan</string>
-    <string name="detail_barang">Detail Stuff</string>
-    <string name="edit_data">Edit cicilan</string>
-    <string name="more_option">More detail</string>
-    <string name="hapus_data">Delete debt</string>
+  <string name="fill_periode_max" tools:keep="@string/fill_periode_max">Pay per month periode</string>
+  <string name="input_over">Over as expect</string>
+  <string name="input_nominal" tools:keep="@string/input_nominal">Input amount</string>
+  <string name="calculate_result" tools:keep="@string/calculate_result">Provisional count</string>
+  <string name="cicilan_per_bulan">Debt per month</string>
 
-    <!-- Mini calculator cicilan dialog -->
-    <string name="prediksi_cicilan">Prediksi cicilan</string>
-    <string name="calculating">Calculating</string>
-    <!-- Mini calculator cicilan dialog -->
+  <string name="choose_image_here" tools:keep="@string/choose_image_here">Choose image from here</string>
+  <string name="proses_cicilan" tools:keep="@string/proses_cicilan">Proses cicilan</string>
+  <string name="detail_barang">Detail Stuff</string>
+  <string name="edit_data">Edit cicilan</string>
+  <string name="more_option">More detail</string>
+  <string name="hapus_data">Delete debt</string>
 
-    <!-- Detail Log transaction -->
-    <string name="detail_transaction">Detail transaction</string>
-    <string name="no_transaction">No transaction found</string>
-    <string name="message_transaction">You might not make any payment of cicilan on this item.</string>
-    <!-- Detail Log transaction -->
+  <!-- Mini calculator cicilan dialog -->
+  <string name="prediksi_cicilan">Prediksi cicilan</string>
+  <string name="calculating">Calculating</string>
+  <!-- Mini calculator cicilan dialog -->
 
-    <!-- Menu Settings -->
-    <string name="setting_title">Settings</string>
-    <string name="note_here">Note something(opsional)</string>
-    <string name="app_about_desc">This app provide to you who manage giving money for pay later for people who need.</string>
+  <!-- Detail Log transaction -->
+  <string name="detail_transaction">Detail transaction</string>
+  <string name="no_transaction">No transaction found</string>
+  <string name="message_transaction">You might not make any payment of cicilan on this item.</string>
+  <!-- Detail Log transaction -->
 
-    <!-- Setting menu preferences -->
-    <string name="label_theme_language">Personalize</string>
-    <string name="change_theme">Theme</string>
-    <string name="change_language">Language</string>
+  <!-- Menu Settings -->
+  <string name="setting_title">Settings</string>
+  <string name="note_here">Note something(opsional)</string>
+  <string name="app_about_desc">This app provide to you who manage giving money for pay later for people who need.
+  </string>
 
-    <string name="title_share_feedback">Share feedback</string>
-    <string name="title_rate_app">Rate app</string>
-    <string name="title_about">About app</string>
+  <!-- Setting menu preferences -->
+  <string name="label_theme_language">Personalize</string>
+  <string name="change_theme">Theme</string>
+  <string name="change_language">Language</string>
 
-    <string name="about_title">About</string>
-    <string name="title_sedekah">Donate</string>
-    <string name="privacy_policy">Privacy policy</string>
-    <string name="feedback">feedback</string>
+  <string name="title_share_feedback">Share feedback</string>
+  <string name="title_rate_app">Rate app</string>
+  <string name="title_about">About app</string>
+
+  <string name="about_title">About</string>
+  <string name="title_sedekah">Donate</string>
+  <string name="privacy_policy">Privacy policy</string>
+  <string name="feedback">feedback</string>
 
 
-    <string name="periode">Period</string>
-    <string name="tenggat">Pay on</string>
-    <string name="light_theme">Light theme</string>
-    <string name="dark_theme">Night theme</string>
-    <string name="default_mode">Default mode</string>
-    <string name="following_system">Following system</string>
-    <string name="light_mode">Light mode</string>
-    <string name="for_day_use">For day use</string>
-    <string name="dark_mode">Dark mode</string>
-    <string name="for_night_use">For night use</string>
-    <string name="otw_title">On the way..</string>
-    <string name="otw_desc">Content will be available on next update</string>
-    <string name="progress">Progress</string>
-    <string name="edit_data_lunas">Cannot edit the debt that has been done</string>
-    <string name="lunas_button_desc">The debt of this item has been done</string>
-    <string name="kamera_desc">Take from camera</string>
-    <string name="storage_desc">Choose from internal storage</string>
-    <string name="laci_kelola_cicilan">Laci: Cicilan Management</string>
+  <string name="periode">Period</string>
+  <string name="tenggat">Pay on</string>
+  <string name="light_theme">Light theme</string>
+  <string name="dark_theme">Night theme</string>
+  <string name="default_mode">Default mode</string>
+  <string name="following_system">Following system</string>
+  <string name="light_mode">Light mode</string>
+  <string name="for_day_use">For day use</string>
+  <string name="dark_mode">Dark mode</string>
+  <string name="for_night_use">For night use</string>
+  <string name="otw_title">On the way..</string>
+  <string name="otw_desc">Content will be available on next update</string>
+  <string name="progress">Progress</string>
+  <string name="edit_data_lunas">Cannot edit the debt that has been done</string>
+  <string name="lunas_button_desc">The debt of this item has been done</string>
+  <string name="kamera_desc">Take from camera</string>
+  <string name="storage_desc">Choose from internal storage</string>
+  <string name="laci_kelola_cicilan">Laci: Cicilan Management</string>
 
 </resources>

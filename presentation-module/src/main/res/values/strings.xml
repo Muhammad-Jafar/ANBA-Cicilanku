@@ -1,176 +1,181 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name" translatable="false">Laci</string>
+  <string name="app_name" translatable="false">Laci</string>
 
-    <!-- Button -->
-    <string name="add_item_button_desc">tambah item</string>
-    <string name="no_data_current">Belum ada data cicilan</string>
-    <string name="no_data_current_message">Anda belum memiliki data cicilan. Untuk menambahkan data, silahkan klik + tambah cicilan pada pojok kanan bawah.</string>
-    <string name="no_data_done">Belum ada cicilan lunas</string>
-    <string name="no_data_done_message">Anda belum memiliki cicilan yang lunas. Data cicilan yang telah lunas akan muncul disini.</string>
-    <string name="save_button_title">Simpan</string>
-    <string name="save_button_desc">tombol simpan</string>
-    <string name="choose_image_from">Pilih gambar dari</string>
-    <string name="internal_storage">File Internal</string>
-    <string name="camera">Kamera</string>
-    <string name="cancel_button">Batalkan</string>
-    <string name="ok_button">Oke</string>
-    <string name="delete_button">Hapus</string>
-    <string name="pay_debt">Bayar cicilan</string>
-    <!-- Button -->
+  <!-- Button -->
+  <string name="add_item_button_desc">tambah item</string>
+  <string name="no_data_current">Belum ada data cicilan</string>
+  <string name="no_data_current_message">Anda belum memiliki data cicilan. Untuk menambahkan data, silahkan klik +
+    tambah cicilan pada pojok kanan bawah.
+  </string>
+  <string name="no_data_done">Belum ada cicilan lunas</string>
+  <string name="no_data_done_message">Anda belum memiliki cicilan yang lunas. Data cicilan yang telah lunas akan muncul
+    disini.
+  </string>
+  <string name="save_button_title">Simpan</string>
+  <string name="save_button_desc">tombol simpan</string>
+  <string name="choose_image_from">Pilih gambar dari</string>
+  <string name="internal_storage">File Internal</string>
+  <string name="camera">Kamera</string>
+  <string name="cancel_button">Batalkan</string>
+  <string name="ok_button">Oke</string>
+  <string name="delete_button">Hapus</string>
+  <string name="pay_debt">Bayar cicilan</string>
+  <!-- Button -->
 
-    <!-- Form validation -->
-    <string name="fill_data">Data tidak boleh kosong</string>
-    <string name="form_date_tenggat">Tenggat lebih dari 30 hari kalender</string>
-    <string name="form_date_periode">Periode lebih dari 12 bulan</string>
-    <string name="form_min_harga" tools:keep="@string/form_min_harga">Harga barang min. 5OOK</string>
-    <string name="form_max_harga">Harga barang maks. 10 juta</string>
-    <string name="form_dp">Uang muka min. 300K</string>
-    <string name="form_dp_lessThan_harga">Harus kurang dari harga barang</string>
-    <string name="input_fill_over">Melebihi batas nominal yang kurang</string>
-    <string name="input_min_limit">Membayar min. 100K</string>
-    <string name="filled_price">Isi harga barang dulu</string>
-    <!-- Form validation -->
+  <!-- Form validation -->
+  <string name="fill_data">Data tidak boleh kosong</string>
+  <string name="form_date_tenggat">Tenggat lebih dari 30 hari kalender</string>
+  <string name="form_date_periode">Periode lebih dari 12 bulan</string>
+  <string name="form_min_harga" tools:keep="@string/form_min_harga">Harga barang min. 5OOK</string>
+  <string name="form_max_harga">Harga barang maks. 10 juta</string>
+  <string name="form_dp">Uang muka min. 300K</string>
+  <string name="form_dp_lessThan_harga">Harus kurang dari harga barang</string>
+  <string name="input_fill_over">Melebihi batas nominal yang kurang</string>
+  <string name="input_min_limit">Membayar min. 100K</string>
+  <string name="filled_price">Isi harga barang dulu</string>
+  <!-- Form validation -->
 
-    <!-- Confirm dialog -->
-    <string name="confirm_delete_data">Yakin ingin menghapus data ini ?</string>
-    <!-- Confirm dialog -->
+  <!-- Confirm dialog -->
+  <string name="confirm_delete_data">Yakin ingin menghapus data ini ?</string>
+  <!-- Confirm dialog -->
 
-    <!-- Home Menu -->
-    <string name="number_cicilan" translatable="false">0</string>
-    <string name="debt_now">Belum lunas</string>
-    <string name="debt_done">Telah Lunas</string>
-    <!-- Home Menu -->
+  <!-- Home Menu -->
+  <string name="number_cicilan" translatable="false">0</string>
+  <string name="debt_now">Belum lunas</string>
+  <string name="debt_done">Telah Lunas</string>
+  <!-- Home Menu -->
 
-    <!-- Add Item Menu -->
-    <string name="penyicil">Penyicil</string>
-    <string name="barang">Barang</string>
-    <string name="periode">Periode</string>
-    <string name="tenggat">Tenggat</string>
-    <string name="User_name">Nama penyicil</string>
-    <string name="User_thing">Nama barang</string>
-    <string name="User_category">Kategori</string>
-    <string name="User_price">Harga barang</string>
-    <string name="User_first_pay">Uang muka</string>
-    <string name="User_duration_pay">Periode cicilan</string>
-    <string name="User_period_date">Tenggat bayar</string>
-    <string name="cancel_direction">Dibatalkan</string>
-    <string name="add_item_image_desc">Tambah gambar cuplikan item</string>
-    <string name="add_data">Tambah cicilan</string>
-    <string name="pic_thing">Foto barang</string>
-    <!-- Add Item Menu -->
+  <!-- Add Item Menu -->
+  <string name="penyicil">Penyicil</string>
+  <string name="barang">Barang</string>
+  <string name="periode">Periode</string>
+  <string name="tenggat">Tenggat</string>
+  <string name="User_name">Nama penyicil</string>
+  <string name="User_thing">Nama barang</string>
+  <string name="User_category">Kategori</string>
+  <string name="User_price">Harga barang</string>
+  <string name="User_first_pay">Uang muka</string>
+  <string name="User_duration_pay">Periode cicilan</string>
+  <string name="User_period_date">Tenggat bayar</string>
+  <string name="cancel_direction">Dibatalkan</string>
+  <string name="add_item_image_desc">Tambah gambar cuplikan item</string>
+  <string name="add_data">Tambah cicilan</string>
+  <string name="pic_thing">Foto barang</string>
+  <!-- Add Item Menu -->
 
-    <!-- Category Item -->
-    <string-array name="data_category">
-        <item>Hand phone</item>
-        <item>Laptop</item>
-        <item>Kulkas</item>
-        <item>Mesin cuci</item>
-        <item>Lemari</item>
-        <item>Kursi</item>
-        <item>Meja</item>
-        <item>Karpet</item>
-        <item>Pendingin (AC)</item>
-    </string-array>
-    <!-- Category Item -->
+  <!-- Category Item -->
+  <string-array name="data_category">
+    <item>Hand phone</item>
+    <item>Laptop</item>
+    <item>Kulkas</item>
+    <item>Mesin cuci</item>
+    <item>Lemari</item>
+    <item>Kursi</item>
+    <item>Meja</item>
+    <item>Karpet</item>
+    <item>Pendingin (AC)</item>
+  </string-array>
+  <!-- Category Item -->
 
-    <!-- Crop Image -->
-    <string name="rotate">Putar</string>
-    <string name="crop_image">Pangkas gambar</string>
-    <!-- Crop Image -->
+  <!-- Crop Image -->
+  <string name="rotate">Putar</string>
+  <string name="crop_image">Pangkas gambar</string>
+  <!-- Crop Image -->
 
-    <!-- Dialog Lunas -->
-    <string name="lunas_at">Lunas pada</string>
-    <!-- Dialog Lunas -->
+  <!-- Dialog Lunas -->
+  <string name="lunas_at">Lunas pada</string>
+  <!-- Dialog Lunas -->
 
-    <!-- Detail Item Menu -->
-    <string name="avatar_preview_desc">Gambar cuplikan</string>
-    <string name="created_at_title">Dicicil pada</string>
-    <string name="sisa">Tersisa</string>
-    <string name="detail_laba">Detail laba</string>
-    <string name="laba">Laba per bulan</string>
-    <string name="percent" translatable="false">%</string>
-    <string name="per_bulan">/bulan</string>
-    <string name="total_laba">Total laba</string>
-    <string name="detail_nominal">Detail cicilan</string>
-    <string name="user_nominal_cicilan">Nominal cicilan</string>
-    <string name="per_bulan_bayar">Per bulan</string>
-    <string name="total_per_bulan">Total per bulan</string>
-    <string name="expire_periode">Pembayaran pada</string>
-    <string name="log_transaction">Lihat transaksi</string>
-    <string name="deleted_successfully">Berhasil dihapus</string>
+  <!-- Detail Item Menu -->
+  <string name="avatar_preview_desc">Gambar cuplikan</string>
+  <string name="created_at_title">Dicicil pada</string>
+  <string name="sisa">Tersisa</string>
+  <string name="detail_laba">Detail laba</string>
+  <string name="laba">Laba per bulan</string>
+  <string name="percent" translatable="false">%</string>
+  <string name="per_bulan">/bulan</string>
+  <string name="total_laba">Total laba</string>
+  <string name="detail_nominal">Detail cicilan</string>
+  <string name="user_nominal_cicilan">Nominal cicilan</string>
+  <string name="per_bulan_bayar">Per bulan</string>
+  <string name="total_per_bulan">Total per bulan</string>
+  <string name="expire_periode">Pembayaran pada</string>
+  <string name="log_transaction">Lihat transaksi</string>
+  <string name="deleted_successfully">Berhasil dihapus</string>
 
-    <string name="fill_periode_max" tools:keep="@string/fill_periode_max">Periode bayar per bulan</string>
-    <string name="input_over">Melebihi kapasitas</string>
-    <string name="input_nominal" tools:keep="@string/input_nominal">Masukkan nominal</string>
-    <string name="calculate_result" tools:keep="@string/calculate_result">Hitungan sementara</string>
-    <string name="cicilan_per_bulan">Cicilan per bulan</string>
+  <string name="fill_periode_max" tools:keep="@string/fill_periode_max">Periode bayar per bulan</string>
+  <string name="input_over">Melebihi kapasitas</string>
+  <string name="input_nominal" tools:keep="@string/input_nominal">Masukkan nominal</string>
+  <string name="calculate_result" tools:keep="@string/calculate_result">Hitungan sementara</string>
+  <string name="cicilan_per_bulan">Cicilan per bulan</string>
 
-    <string name="choose_image_here" tools:keep="@string/choose_image_here">Pilih gambar dari sini</string>
-    <string name="proses_cicilan" tools:keep="@string/proses_cicilan">Proses cicilan</string>
-    <string name="detail_barang">Detail barang</string>
-    <string name="edit_data">Edit cicilan</string>
-    <string name="hapus_data">Hapus cicilan</string>
-    <string name="more_option">Detail pilihan</string>
+  <string name="choose_image_here" tools:keep="@string/choose_image_here">Pilih gambar dari sini</string>
+  <string name="proses_cicilan" tools:keep="@string/proses_cicilan">Proses cicilan</string>
+  <string name="detail_barang">Detail barang</string>
+  <string name="edit_data">Edit cicilan</string>
+  <string name="hapus_data">Hapus cicilan</string>
+  <string name="more_option">Detail pilihan</string>
 
-    <!-- Mini calculator cicilan dialog -->
-    <string name="prediksi_cicilan">Prediksi cicilan</string>
-    <string name="calculating">Menghitung…</string>
-    <!-- Mini calculator cicilan dialog -->
+  <!-- Mini calculator cicilan dialog -->
+  <string name="prediksi_cicilan">Prediksi cicilan</string>
+  <string name="calculating">Menghitung…</string>
+  <!-- Mini calculator cicilan dialog -->
 
-    <!-- Detail Log transaction -->
-    <string name="detail_transaction">Detil transaksi</string>
-    <string name="no_transaction">Tidak ada transaksi ditemukan</string>
-    <string name="message_transaction">Anda belum melakukan pembayaran cicilan apapun pada item ini.</string>
-    <!-- Detail Log transaction -->
+  <!-- Detail Log transaction -->
+  <string name="detail_transaction">Detil transaksi</string>
+  <string name="no_transaction">Tidak ada transaksi ditemukan</string>
+  <string name="message_transaction">Anda belum melakukan pembayaran cicilan apapun pada item ini.</string>
+  <!-- Detail Log transaction -->
 
-    <!-- Menu Settings -->
-    <string name="setting_title">Pengaturan</string>
-    <string name="note_here">Tulis catatan(opsional)</string>
-    <string name="app_about_desc">Aplikasi ini dibuat untuk kamu yang mengelola bisnis memberikan cicilan kepada yang membutuhkan.</string>
+  <!-- Menu Settings -->
+  <string name="setting_title">Pengaturan</string>
+  <string name="note_here">Tulis catatan(opsional)</string>
+  <string name="app_about_desc">Aplikasi ini dibuat untuk kamu yang mengelola bisnis memberikan cicilan kepada yang
+    membutuhkan.
+  </string>
 
-    <!-- Setting menu preferences -->
-    <string name="label_theme_language">Personalisasi</string>
-    <string name="change_theme">Tema</string>
-    <string name="change_language">Bahasa</string>
-    <string name="key_theme" translatable="false">theme</string>
-    <string name="key_language" translatable="false">Language</string>
-    <string name="default_language" translatable="false">Bahasa Indonesia</string>
-    <string name="light_theme">Tema terang</string>
-    <string name="dark_theme">Tema gelap</string>
+  <!-- Setting menu preferences -->
+  <string name="label_theme_language">Personalisasi</string>
+  <string name="change_theme">Tema</string>
+  <string name="change_language">Bahasa</string>
+  <string name="key_theme" translatable="false">theme</string>
+  <string name="key_language" translatable="false">Language</string>
+  <string name="default_language" translatable="false">Bahasa Indonesia</string>
+  <string name="light_theme">Tema terang</string>
+  <string name="dark_theme">Tema gelap</string>
 
-    <string name="key_feedback" translatable="false">feedback</string>
-    <string name="key_rating" translatable="false">rating</string>
-    <string name="key_about" translatable="false">Tentang</string>
-    <string name="title_share_feedback">Berikan masukan</string>
-    <string name="title_rate_app">Nilai aplikasi</string>
-    <string name="title_about">Tentang aplikasi</string>
-    <string name="about_title">Tentang</string>
+  <string name="key_feedback" translatable="false">feedback</string>
+  <string name="key_rating" translatable="false">rating</string>
+  <string name="key_about" translatable="false">Tentang</string>
+  <string name="title_share_feedback">Berikan masukan</string>
+  <string name="title_rate_app">Nilai aplikasi</string>
+  <string name="title_about">Tentang aplikasi</string>
+  <string name="about_title">Tentang</string>
 
-    <string name="key_privacy" translatable="false">privacy</string>
-    <string name="key_faq" translatable="false">faq</string>
-    <string name="privacy_policy">Kebijakan privasi</string>
-    <string name="faq" translatable="false">FAQ</string>
-    <string name="title_sedekah">Sedekah</string>
-    <string name="feedback">Masukan</string>
-    <string name="key_donate" translatable="false">donate</string>
-    <string name="bahasa_indonesia" translatable="false">Bahasa Indonesia</string>
-    <string name="indonesia" translatable="false">Indonesia</string>
-    <string name="english_internasional" translatable="false">English</string>
-    <string name="english" translatable="false">English</string>
-    <string name="default_mode">Mode bawaan</string>
-    <string name="following_system">Mengikuti sistem</string>
-    <string name="light_mode">Mode terang</string>
-    <string name="for_day_use">Untuk penggunaan siang hari</string>
-    <string name="dark_mode">Mode gelap</string>
-    <string name="for_night_use">Untuk penggunaan malam hari</string>
-    <string name="otw_title">Dalam proses..</string>
-    <string name="otw_desc">Konten akan tersedia pada pembaruan selanjutnya</string>
-    <string name="progress">Kemajuan</string>
-    <string name="edit_data_lunas">Cicilan lunas tidak dapat diubah lagi</string>
-    <string name="lunas_button_desc">Cicilan item ini telah lunas</string>
-    <string name="kamera_desc">Ambil foto dari kamera</string>
-    <string name="storage_desc">Pilih dari penyimpanan internal</string>
-    <string name="laci_kelola_cicilan">Laci: Kelola Cicilan</string>
-    <string name="title_dynamicfeature">Module Title</string>
+  <string name="key_privacy" translatable="false">privacy</string>
+  <string name="key_faq" translatable="false">faq</string>
+  <string name="privacy_policy">Kebijakan privasi</string>
+  <string name="faq" translatable="false">FAQ</string>
+  <string name="title_sedekah">Sedekah</string>
+  <string name="feedback">Masukan</string>
+  <string name="key_donate" translatable="false">donate</string>
+  <string name="bahasa_indonesia" translatable="false">Bahasa Indonesia</string>
+  <string name="indonesia" translatable="false">Indonesia</string>
+  <string name="english_internasional" translatable="false">English</string>
+  <string name="english" translatable="false">English</string>
+  <string name="default_mode">Mode bawaan</string>
+  <string name="following_system">Mengikuti sistem</string>
+  <string name="light_mode">Mode terang</string>
+  <string name="for_day_use">Untuk penggunaan siang hari</string>
+  <string name="dark_mode">Mode gelap</string>
+  <string name="for_night_use">Untuk penggunaan malam hari</string>
+  <string name="otw_title">Dalam proses..</string>
+  <string name="otw_desc">Konten akan tersedia pada pembaruan selanjutnya</string>
+  <string name="progress">Kemajuan</string>
+  <string name="edit_data_lunas">Cicilan lunas tidak dapat diubah lagi</string>
+  <string name="lunas_button_desc">Cicilan item ini telah lunas</string>
+  <string name="kamera_desc">Ambil foto dari kamera</string>
+  <string name="storage_desc">Pilih dari penyimpanan internal</string>
+  <string name="laci_kelola_cicilan">Laci: Kelola Cicilan</string>
 
 </resources>
