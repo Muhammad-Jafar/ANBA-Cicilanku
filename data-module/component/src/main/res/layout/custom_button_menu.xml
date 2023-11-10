@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackgroundBorderless">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iconButtonMenu"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginVertical="12dp"
+        android:background="?attr/colorCustomContainer"
+        app:contentPadding="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Medium"
+        app:srcCompat="@drawable/icon_camera" />
+
+    <TextView
+        android:id="@+id/titleButtonMenu"
+        style="@style/HeadingSubTitle"
+        android:layout_marginStart="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/iconButtonMenu"
+        app:layout_constraintTop_toTopOf="@+id/iconButtonMenu"
+        tools:text="Penyimpanan internal" />
+
+    <TextView
+        android:id="@+id/subtitleButtonMenu"
+        style="@style/BodyContent"
+        android:textColor="?attr/colorControlActivated"
+        app:layout_constraintStart_toStartOf="@+id/titleButtonMenu"
+        app:layout_constraintTop_toBottomOf="@+id/titleButtonMenu"
+        tools:text="Ambil foto dari file internal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

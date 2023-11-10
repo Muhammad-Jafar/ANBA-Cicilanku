@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$USER_HOME$/Gradle" />
+        <option name="gradleJvm" value="zulu-17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/data-module" />
+            <option value="$PROJECT_DIR$/data-module/component" />
+            <option value="$PROJECT_DIR$/data-module/db" />
+            <option value="$PROJECT_DIR$/data-module/preference" />
+            <option value="$PROJECT_DIR$/data-module/repository" />
+            <option value="$PROJECT_DIR$/data-module/util" />
+            <option value="$PROJECT_DIR$/domain-module" />
+            <option value="$PROJECT_DIR$/domain-module/entities" />
+            <option value="$PROJECT_DIR$/domain-module/repositories" />
+            <option value="$PROJECT_DIR$/domain-module/usecases" />
+            <option value="$PROJECT_DIR$/presentation-module" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
