@@ -1,6 +1,8 @@
 package app.cicilan.usecases
 
+import app.cicilan.entities.State
 import app.cicilan.repositories.CicilanViewerRepository
+import kotlinx.coroutines.flow.Flow
 
 /**
  * Created by: Muhammad Jafar
@@ -11,5 +13,5 @@ import app.cicilan.repositories.CicilanViewerRepository
 class CountCicilanUseCase(
     private val useCase: CicilanViewerRepository,
 ) {
-    operator fun invoke(status: String) = useCase.countList(status)
+    operator fun invoke(status: String): Flow<State<Int>> = useCase.countList(status)
 }

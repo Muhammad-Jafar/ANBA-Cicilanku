@@ -6,25 +6,31 @@ import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
 import app.cicilan.presentation.BaseFragment
+import app.cicilan.presentation.HomeViewModel
 import app.cicilan.presentation.R
 import app.cicilan.presentation.databinding.DialogCalculateCicilanBinding
 import app.cicilan.presentation.databinding.MainHomeBinding
 import app.cicilan.util.addAutoConverterToMoneyFormat
+import app.cicilan.util.runWhenStarted
 import app.cicilan.util.rupiahFormat
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.tabs.TabLayoutMediator
+import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.launch
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class HomeFragment : BaseFragment<MainHomeBinding>(MainHomeBinding::inflate) {
-    /*private val viewModel: HomeViewModel by viewModel()*/
+    /*private val viewModel: HomeViewModel by inject()*/
+    private val viewModel: HomeViewModel by viewModel()
 
     override fun renderView(bundle: Bundle?) {
         with(binding) {
-            /*with(viewModel) {
+            with(viewModel) {
                 runWhenStarted {
                     launch { getTotalCurrent.collectLatest { belumLunasContent.text = it } }
                     launch { getTotalDone.collectLatest { sudahLunasContent.text = it } }
                 }
-            }*/
+            }
             toolbarHome.apply {
                 inflateMenu(R.menu.main_option_menu)
                 setOnMenuItemClickListener {

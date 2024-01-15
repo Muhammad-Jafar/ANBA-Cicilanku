@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.com.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.nav.safe.args)
+    alias(libs.plugins.kotlin.ksp)
 }
 
 android {
@@ -42,6 +43,8 @@ dependencies {
     implementation(project(":data-module:component"))
 
     implementation(libs.bundles.koin)
+    /*implementation(libs.bundles.room)*/
+    ksp(libs.room.ksp)
     implementation(libs.bundles.commoncore)
     implementation(libs.bundles.lifecycle)
     implementation(libs.bundles.activityfragment)

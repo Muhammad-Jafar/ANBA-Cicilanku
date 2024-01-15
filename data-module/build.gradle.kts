@@ -4,7 +4,7 @@ import com.android.build.gradle.LibraryPlugin
 subprojects {
     apply(plugin = "com.android.library")
     apply(plugin = "org.jetbrains.kotlin.android")
-    apply(plugin = "com.google.devtools.ksp")
+    /*apply(plugin = "com.google.devtools.ksp")*/
 
     plugins.withType(LibraryPlugin::class.java).configureEach {
         configure<LibraryExtension> {

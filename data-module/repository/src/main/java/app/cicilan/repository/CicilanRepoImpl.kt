@@ -2,8 +2,8 @@ package app.cicilan.repository
 
 import android.net.Uri
 import androidx.room.withTransaction
-import app.cicilan.db.CicilanDao
 import app.cicilan.db.CicilanDb
+import app.cicilan.db.DbProvider
 import app.cicilan.entities.ItemEntity
 import app.cicilan.entities.ItemLogEntity
 import app.cicilan.entities.ModalForm
@@ -19,9 +19,14 @@ import java.io.File
  */
 
 class CicilanRepoImpl(
-    private val dao: CicilanDao,
-    private val db: CicilanDb,
+    private val databaseProvider: DbProvider,
 ) : CicilanRepository {
+
+    private val db by lazy {
+        databaseProvider.provide("cicilan", CicilanDb::class.java)
+    }
+
+    private val dao = db.cicilanDao()
     override suspend fun insert(add: ModalForm) {
         val nominalMembayar = add.hargaBarang - add.uangMuka
         val perBulan = nominalMembayar / add.periode

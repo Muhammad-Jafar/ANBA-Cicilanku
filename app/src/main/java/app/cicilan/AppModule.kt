@@ -29,6 +29,8 @@ import org.koin.androidx.fragment.dsl.fragment
 import org.koin.androidx.fragment.koin.fragmentFactory
 import org.koin.androidx.viewmodel.dsl.viewModelOf
 import org.koin.core.context.startKoin
+import org.koin.core.module.dsl.bind
+import org.koin.core.module.dsl.singleOf
 import org.koin.dsl.module
 
 /**
@@ -72,19 +74,15 @@ class AppModule : Application() {
             single { StoreData(get()) }
         }
 
-        val interfaceModule = module {
-
-        }
-
         val repositoryModule = module {
-            single<CicilanRepository> { CicilanRepoImpl(get(), get()) }
-            single<CicilanLogRepository> { CicilanLogRepoImpl(get()) }
-            single<CicilanViewerRepository> { CicilanViewerRepoImpl(get()) }
+            singleOf(::CicilanRepoImpl) { bind<CicilanRepository>() }
+            singleOf(::CicilanViewerRepoImpl) { bind<CicilanViewerRepository>() }
+            singleOf(::CicilanLogRepoImpl) { bind<CicilanLogRepository>() }
         }
 
         val usecaseModule = module {
-            factory { GetListCicilanLogUseCase(get()) }
-            factory { CountCicilanUseCase(get()) }
+            singleOf(::GetListCicilanLogUseCase)
+            singleOf(::CountCicilanUseCase)
         }
 
         val viewModelModule = module {

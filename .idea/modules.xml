@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/component/AndroidStudioProjects.Cicilan.data-module.component.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/component/AndroidStudioProjects.Cicilan.data-module.component.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/component/AndroidStudioProjects.Cicilan.data-module.component.androidTest~1.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/component/AndroidStudioProjects.Cicilan.data-module.component.androidTest~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/component/AndroidStudioProjects.Cicilan.data-module.component.main~1.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/component/AndroidStudioProjects.Cicilan.data-module.component.main~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/component/AndroidStudioProjects.Cicilan.data-module.component.unitTest~1.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/component/AndroidStudioProjects.Cicilan.data-module.component.unitTest~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/util/AndroidStudioProjects.Cicilan.data-module.util.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/util/AndroidStudioProjects.Cicilan.data-module.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/util/AndroidStudioProjects.Cicilan.data-module.util.androidTest~1.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/util/AndroidStudioProjects.Cicilan.data-module.util.androidTest~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/util/AndroidStudioProjects.Cicilan.data-module.util.main~1.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/util/AndroidStudioProjects.Cicilan.data-module.util.main~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/util/AndroidStudioProjects.Cicilan.data-module.util.unitTest~1.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/util/AndroidStudioProjects.Cicilan.data-module.util.unitTest~1.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Cicilan.iml" filepath="$PROJECT_DIR$/.idea/modules/Cicilan.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Cicilan.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Cicilan.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Cicilan.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Cicilan.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Cicilan.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Cicilan.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Cicilan.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Cicilan.app.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/Cicilan.data-module.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/Cicilan.data-module.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/component/Cicilan.data-module.component.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/component/Cicilan.data-module.component.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/component/Cicilan.data-module.component.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/component/Cicilan.data-module.component.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/component/Cicilan.data-module.component.main.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/component/Cicilan.data-module.component.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/component/Cicilan.data-module.component.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/component/Cicilan.data-module.component.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/db/Cicilan.data-module.db.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/db/Cicilan.data-module.db.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/db/Cicilan.data-module.db.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/db/Cicilan.data-module.db.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/db/Cicilan.data-module.db.main.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/db/Cicilan.data-module.db.main.iml" />
@@ -24,15 +28,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/repository/Cicilan.data-module.repository.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/repository/Cicilan.data-module.repository.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/repository/Cicilan.data-module.repository.main.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/repository/Cicilan.data-module.repository.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/repository/Cicilan.data-module.repository.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/repository/Cicilan.data-module.repository.unitTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/util/Cicilan.data-module.util.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/util/Cicilan.data-module.util.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/util/Cicilan.data-module.util.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/util/Cicilan.data-module.util.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/util/Cicilan.data-module.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/util/Cicilan.data-module.util.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-module/util/Cicilan.data-module.util.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/data-module/util/Cicilan.data-module.util.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain-module/Cicilan.domain-module.iml" filepath="$PROJECT_DIR$/.idea/modules/domain-module/Cicilan.domain-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain-module/entities/Cicilan.domain-module.entities.iml" filepath="$PROJECT_DIR$/.idea/modules/domain-module/entities/Cicilan.domain-module.entities.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain-module/entities/Cicilan.domain-module.entities.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/domain-module/entities/Cicilan.domain-module.entities.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain-module/entities/Cicilan.domain-module.entities.main.iml" filepath="$PROJECT_DIR$/.idea/modules/domain-module/entities/Cicilan.domain-module.entities.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain-module/entities/Cicilan.domain-module.entities.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/domain-module/entities/Cicilan.domain-module.entities.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain-module/repositories/Cicilan.domain-module.repositories.iml" filepath="$PROJECT_DIR$/.idea/modules/domain-module/repositories/Cicilan.domain-module.repositories.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain-module/repositories/Cicilan.domain-module.repositories.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/domain-module/repositories/Cicilan.domain-module.repositories.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain-module/repositories/Cicilan.domain-module.repositories.main.iml" filepath="$PROJECT_DIR$/.idea/modules/domain-module/repositories/Cicilan.domain-module.repositories.main.iml" />
@@ -45,6 +44,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/presentation-module/Cicilan.presentation-module.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/presentation-module/Cicilan.presentation-module.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/presentation-module/Cicilan.presentation-module.main.iml" filepath="$PROJECT_DIR$/.idea/modules/presentation-module/Cicilan.presentation-module.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/presentation-module/Cicilan.presentation-module.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/presentation-module/Cicilan.presentation-module.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain-module/entities/entities.Cicilan.domain-module.entities.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/domain-module/entities/entities.Cicilan.domain-module.entities.unitTest.iml" />
     </modules>
   </component>
 </project>
