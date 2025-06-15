@@ -10,6 +10,8 @@ import app.cicilan.local.db.CicilanDao
 import app.cicilan.local.db.CicilanDb
 import app.cicilan.repositories.contracts.CicilanRepository
 import java.io.File
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.runBlocking
 
 /**
@@ -23,10 +25,28 @@ class CicilanRepoImpl(
     private val dao: CicilanDao,
 ) : CicilanRepository {
 
-    /*private val db by lazy {
-        databaseProvider.provide("cicilan", CicilanDb::class.java)
-    }
-    private val dao = db.cicilanDao()*/
+    override fun get(status: String): Flow<List<Item>> =
+        flow {
+            val list = dao.getListCicilan(status)
+
+            if (list != null) emit(list)
+            else emit(listOf())
+        }
+
+    override fun getById(id: Int): Flow<Item> =
+        flow {
+            val getCicilan = dao.getCicilanById(id)
+
+            emit(getCicilan)
+        }
+
+    override fun count(status: String): Flow<Int> =
+        flow {
+            val counted = dao.countCicilan(status)
+
+            if (counted != null) emit(counted)
+            else emit(0)
+        }
 
     override suspend fun insert(add: ModalForm) {
         val nominalMembayar = add.hargaBarang - add.uangMuka
@@ -44,13 +64,15 @@ class CicilanRepoImpl(
 
     override suspend fun update(update: ModalForm) {
         if (update.id != null) {
-            val set = dao.getCicilanById(update.id!!)
-            set.collect {
-                val image = if (update.gambarBarang == it?.gambarBarang) {
-                    it?.gambarBarang
-                } else {
-                    update.gambarBarang
-                }
+            val cicilan = dao.getCicilanById(update.id!!)
+
+            with(cicilan) {
+                val image =
+                    if (update.gambarBarang == gambarBarang) {
+                        gambarBarang
+                    } else {
+                        update.gambarBarang
+                    }
                 val nominalMembayar = update.hargaBarang - update.uangMuka
                 val perBulan = nominalMembayar / update.periode
                 val laba = (nominalMembayar * 0.05).toInt()
@@ -58,9 +80,9 @@ class CicilanRepoImpl(
                 val nominalPerBulan = (perBulan + laba)
 
                 val item = Item(
-                    it?.idCicilan!!, it.dibuatPada, null, image, update.namaPenyicil,
+                    idCicilan, dibuatPada, null, image, update.namaPenyicil,
                     update.namaBarang, update.kategori, update.hargaBarang, update.uangMuka,
-                    nominalMembayar, it.nominalLunas, update.periode, update.tenggatBayar,
+                    nominalMembayar, nominalLunas, update.periode, update.tenggatBayar,
                     perBulan, laba, nominalPerBulan, totalLaba, "NO",
                 )
                 dao.updateItem(item)

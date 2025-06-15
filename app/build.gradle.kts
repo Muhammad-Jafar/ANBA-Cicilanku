@@ -1,8 +1,4 @@
 plugins {
-    /*id("com.android.application")
-    id("org.jetbrains.kotlin.android")
-    id("androidx.navigation.safeargs")
-    id("com.google.devtools.ksp")*/
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.nav.safe.args)

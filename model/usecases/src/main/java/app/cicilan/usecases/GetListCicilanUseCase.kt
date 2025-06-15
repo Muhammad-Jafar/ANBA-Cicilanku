@@ -1,7 +1,6 @@
 package app.cicilan.usecases
 
 import app.cicilan.repositories.contracts.CicilanRepository
-import kotlinx.coroutines.flow.Flow
 
 /**
  * Created by: Muhammad Jafar
@@ -9,8 +8,8 @@ import kotlinx.coroutines.flow.Flow
  * Find me: 131.powerfull@gmail.com
  */
 
-class CountCicilanUseCase(
+class GetListCicilanUseCase(
     private val repo: CicilanRepository,
 ) {
-    operator fun invoke(status: String): Flow<Int> = repo.count(status)
+    operator fun invoke(status: String) = repo.get(status)
 }

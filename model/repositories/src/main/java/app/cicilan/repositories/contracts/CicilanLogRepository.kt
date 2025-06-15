@@ -1,7 +1,6 @@
 package app.cicilan.repositories.contracts
 
 import app.cicilan.entities.ItemLog
-import app.cicilan.entities.State
 import kotlinx.coroutines.flow.Flow
 
 /**
@@ -11,5 +10,5 @@ import kotlinx.coroutines.flow.Flow
  */
 
 interface CicilanLogRepository {
-    fun getListLog(id: Int): Flow<State<List<ItemLog>>>
+    fun getLog(id: Int): Flow<List<ItemLog>>
 }

@@ -13,7 +13,7 @@ android {
             .toInt()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        /*consumerProguardFiles("consumer-rules.pro")*/
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {

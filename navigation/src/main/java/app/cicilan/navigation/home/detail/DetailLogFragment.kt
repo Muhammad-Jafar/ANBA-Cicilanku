@@ -5,7 +5,7 @@ import android.view.View
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import app.cicilan.entities.State
+import app.cicilan.entities.UiState
 import app.cicilan.navigation.BaseFragment
 import app.cicilan.navigation.DetailViewModel
 import app.cicilan.navigation.databinding.MainDetailLogBinding
@@ -34,12 +34,15 @@ class DetailLogFragment : BaseFragment<MainDetailLogBinding>(MainDetailLogBindin
                 getLog(args.cicilanId)
                 loadLogCicilan.onEach { state ->
                     when (state) {
-                        is State.Loading -> {}
-                        is State.Error -> {}
-                        is State.Empty -> viewEmpty.visibility = View.VISIBLE
-                        is State.Success -> {
-                            viewEmpty.visibility = View.GONE
-                            logAdapter.submitList(state.data)
+                        is UiState.Loading -> {}
+                        is UiState.Error -> {}
+                        is UiState.Success -> {
+                            if (state.data != null) {
+                                viewEmpty.visibility = View.GONE
+                                logAdapter.submitList(state.data)
+                            } else {
+                                viewEmpty.visibility = View.VISIBLE
+                            }
                         }
                     }
                 }.launchIn(lifecycleScope)

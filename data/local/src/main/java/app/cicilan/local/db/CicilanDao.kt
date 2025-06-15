@@ -7,24 +7,23 @@ import androidx.room.Query
 import androidx.room.Update
 import app.cicilan.entities.Item
 import app.cicilan.entities.ItemLog
-import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface CicilanDao {
     @Query("SELECT COUNT (id_cicilan) FROM item WHERE status = :status")
-    fun countCicilan(status: String): Flow<Int?>
+    fun countCicilan(status: String): Int?
 
     @Query("SELECT * FROM item WHERE status = :status ORDER BY dibuat_pada DESC")
-    fun getListCicilan(status: String): Flow<List<Item>>
+    fun getListCicilan(status: String): List<Item>?
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertCicilan(item: Item)
 
     @Query("SELECT * FROM item WHERE id_cicilan = :id")
-    fun getCicilanById(id: Int): Flow<Item?>
+    fun getCicilanById(id: Int): Item
 
     @Query("SELECT * FROM ItemLog WHERE id_cicilan = :id ORDER BY tgl_transaksi DESC")
-    fun getListLogCicilan(id: Int): Flow<List<ItemLog>>
+    fun getListLogCicilan(id: Int): List<ItemLog>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun addCicilanLog(itemLog: ItemLog)

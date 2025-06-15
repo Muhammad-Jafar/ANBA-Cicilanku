@@ -1,14 +1,15 @@
 package app.cicilan.component.util
 
+import android.Manifest
 import android.content.res.Resources
 import android.icu.text.NumberFormat.getCurrencyInstance
-import android.os.Build
 import android.os.VibrationEffect
 import android.os.Vibrator
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
 import android.view.inputmethod.InputMethodManager
+import androidx.annotation.RequiresPermission
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat.getSystemService
 import androidx.fragment.app.Fragment
@@ -32,6 +33,11 @@ import java.util.Date
 import java.util.Locale
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 
 /* Get date for locale */
@@ -70,10 +76,10 @@ fun Fragment.popupDialog(title: String, message: String): MaterialAlertDialogBui
         ) { dialog, _ -> dialog.dismiss() }
 
 // /* Hide Soft Keyboard */
-// fun TextInputEditText.hideSoftKeyboard() {
-//    (context.getSystemService(AppCompatActivity.INPUT_METHOD_SERVICE) as InputMethodManager)
-//        .hideSoftInputFromWindow(this.windowToken, 0)
-// }
+ fun TextInputEditText.hideSoftKeyboard() {
+    (context.getSystemService(AppCompatActivity.INPUT_METHOD_SERVICE) as InputMethodManager)
+        .hideSoftInputFromWindow(this.windowToken, 0)
+ }
 
 /* EditText changed event observer */
 fun TextInputEditText.afterInputNumberChanged(afterTextChanged: (Int) -> Unit) =
@@ -146,6 +152,17 @@ fun Fragment.showMessage(message: String?) = view?.apply {
 fun ViewModel.runInBackground(action: suspend CoroutineScope.() -> Unit) =
     viewModelScope.launch(Dispatchers.IO) { action() }
 
+/* Running with stateIn() */
+context(ViewModel)
+fun <T> Flow<T>.mapWithStateInWhileSubscribed(initialValue: T): StateFlow<T> =
+    this.map { it }
+        .stateIn(
+            scope = viewModelScope,
+            started = SharingStarted.WhileSubscribed(5_000),
+            initialValue = initialValue
+        )
+
+
 /* Running in background Fragment */
 fun Fragment.runWhenCreated(action: suspend CoroutineScope.() -> Unit) = lifecycleScope.launch {
     repeatOnLifecycle(Lifecycle.State.CREATED) { action() }
@@ -166,14 +183,6 @@ fun AppCompatActivity.runWhenCreated(action: suspend CoroutineScope.() -> Unit) 
 fun Int.dotPixel() = (this.toFloat() * Resources.getSystem().displayMetrics.density).toInt()
 
 /* PLAY SHAKE ANIMATION */
+@RequiresPermission(Manifest.permission.VIBRATE)
 fun View.vibrate() = getSystemService(context, Vibrator::class.java)
-    ?.let {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            it.vibrate(
-                VibrationEffect.createOneShot(300, VibrationEffect.DEFAULT_AMPLITUDE),
-            )
-        } else {
-            @Suppress("DEPRECATION")
-            it.vibrate(300)
-        }
-    }
+    ?.vibrate(VibrationEffect.createOneShot(400, VibrationEffect.DEFAULT_AMPLITUDE))

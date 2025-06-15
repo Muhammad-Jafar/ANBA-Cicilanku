@@ -9,7 +9,7 @@ import app.cicilan.repositories.contracts.CicilanLogRepository
  */
 
 class GetListCicilanLogUseCase(
-    private val repo: CicilanLogRepository,
+    private val repo: CicilanLogRepository
 ) {
-    operator fun invoke(idLog: Int) = repo.getListLog(idLog)
+    operator fun invoke(idLog: Int) = repo.getLog(idLog)
 }

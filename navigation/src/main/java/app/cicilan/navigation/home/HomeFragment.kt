@@ -6,13 +6,17 @@ import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
 import app.cicilan.component.util.addAutoConverterToMoneyFormat
+import app.cicilan.component.util.afterInputNumberChanged
+import app.cicilan.component.util.getNumber
+import app.cicilan.component.util.runWhenResumed
 import app.cicilan.component.util.runWhenStarted
 import app.cicilan.component.util.rupiahFormat
+import app.cicilan.navigation.BaseFragment
+import app.cicilan.navigation.HomeViewModel
 import app.cicilan.navigation.R
 import app.cicilan.navigation.databinding.DialogCalculateCicilanBinding
 import app.cicilan.navigation.databinding.MainHomeBinding
-import app.cicilan.navigation.BaseFragment
-import app.cicilan.navigation.HomeViewModel
+import com.google.android.material.color.MaterialColors.getColor
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.coroutines.flow.collectLatest
@@ -20,15 +24,14 @@ import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class HomeFragment : BaseFragment<MainHomeBinding>(MainHomeBinding::inflate) {
-    /*private val viewModel: HomeViewModel by inject()*/
     private val viewModel: HomeViewModel by viewModel()
 
     override fun renderView(bundle: Bundle?) {
         with(binding) {
             with(viewModel) {
                 runWhenStarted {
-                    launch { getTotalCurrent.collectLatest { belumLunasContent.text = it } }
-                    launch { getTotalDone.collectLatest { sudahLunasContent.text = it } }
+                    launch { getTotalCurrent.collectLatest { belumLunasContent.text = it.toString() } }
+                    launch { getTotalDone.collectLatest { sudahLunasContent.text = it.toString() } }
                 }
             }
             toolbarHome.apply {
@@ -77,7 +80,7 @@ class HomeFragment : BaseFragment<MainHomeBinding>(MainHomeBinding::inflate) {
             dpInput.addAutoConverterToMoneyFormat(dpInputLayout)
             periodeInput.addAutoConverterToMoneyFormat(periodeInputLayout)
 
-            /*with(viewModel) {
+            with(viewModel) {
                 runWhenResumed {
                     perBulanValue.observe(viewLifecycleOwner) { state ->
                         calculateLabel.text = when {
@@ -112,7 +115,7 @@ class HomeFragment : BaseFragment<MainHomeBinding>(MainHomeBinding::inflate) {
                         periodeInput.text.getNumber(),
                     )
                 }
-            }*/
+            }
         }
         dialog.show()
     }

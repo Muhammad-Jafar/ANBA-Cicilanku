@@ -1,15 +1,19 @@
 package app.cicilan.navigation
 
 import android.net.Uri
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import app.cicilan.component.util.mapWithStateInWhileSubscribed
 import app.cicilan.component.util.runInBackground
+import app.cicilan.entities.CalculateState
 import app.cicilan.entities.ItemLog
-import app.cicilan.entities.State
+import app.cicilan.entities.ModalForm
+import app.cicilan.entities.UiState
 import app.cicilan.repositories.contracts.CicilanRepository
 import app.cicilan.repositories.contracts.SettingRepository
 import app.cicilan.usecases.CountCicilanUseCase
+import app.cicilan.usecases.GetListCicilanUseCase
 import kotlinx.coroutines.flow.MutableSharedFlow
-import kotlinx.coroutines.flow.map
 
 /**
  * Created by: Muhammad Jafar
@@ -20,80 +24,47 @@ import kotlinx.coroutines.flow.map
 open class MainViewModel : ViewModel()
 
 class HomeViewModel(
-    /*private val cicilanRepository: CicilanRepository,*/
     countCicilan: CountCicilanUseCase,
-    /*private val historyRepo: CicilanHistoryRepository,*/
+    private val getCicilan: GetListCicilanUseCase,
 ) : MainViewModel() {
 
-    val getTotalCurrent = countCicilan.invoke("NO").map { it.toString() }
-    val getTotalDone = countCicilan.invoke("YES").map { it.toString() }
+    val getTotalCurrent = countCicilan("NO")
+        .mapWithStateInWhileSubscribed(0)
+    val getTotalDone = countCicilan("YES")
+        .mapWithStateInWhileSubscribed(0)
 
-    /*private val _getCurrentList = MutableStateFlow<ListState>(ListState.Loading)
-    val getCurrentList get() = _getCurrentList
+    fun getList(status: String) = getCicilan(status)
+        .mapWithStateInWhileSubscribed(listOf())
 
-    fun getCurrent() = runInBackground {
-        viewerRepo.getList("NO").collect { item ->
-            if (item.isEmpty()) {
-                _getCurrentList.value = ListState.Success(item)
-            } else {
-                _getCurrentList.value = ListState.Success(item)
-            }
-        }
-    }
-
-    private val _getDoneList = MutableStateFlow<app.cicilan.model.ListState>(app.cicilan.model.ListState.Empty)
-    val getDoneList get() = _getDoneList
-    fun getDone() = runInBackground {
-        repo.getListCicilan("YES").collect { item ->
-            if (item.isEmpty()) {
-                _getDoneList.value = app.cicilan.model.ListState.Empty
-            } else {
-                _getDoneList.value = app.cicilan.model.ListState.Success(item)
-            }
-        }
-    }
-
-    private val _perBulanValue = MutableLiveData(app.cicilan.model.CalculateState())
+    private val _perBulanValue = MutableLiveData(CalculateState())
     val perBulanValue get() = _perBulanValue
     var labaValue = 0
 
     fun calculate(harga: Int, dp: Int, periode: Int) {
         when {
-            harga < 1 ->
-                _perBulanValue.value =
-                    app.cicilan.model.CalculateState(hargaError = R.string.fill_data)
-
-            dp < 1 ->
-                _perBulanValue.value =
-                    app.cicilan.model.CalculateState(dpError = R.string.fill_data)
-
-            dp > harga ->
-                _perBulanValue.value =
-                    app.cicilan.model.CalculateState(dpError = R.string.form_dp_lessThan_harga)
-
-            periode < 1 ->
-                _perBulanValue.value =
-                    app.cicilan.model.CalculateState(periodeError = R.string.fill_data)
-
+            harga < 1 -> _perBulanValue.value = CalculateState(hargaError = R.string.fill_data)
+            dp < 1 -> _perBulanValue.value = CalculateState(dpError = R.string.fill_data)
+            dp > harga -> _perBulanValue.value = CalculateState(dpError = R.string.form_dp_lessThan_harga)
+            periode < 1 -> _perBulanValue.value = CalculateState(periodeError = R.string.fill_data)
             else -> {
                 val nominalMembayar = harga - dp
                 val nominalPerBulan = (nominalMembayar / periode)
                 val laba = (nominalMembayar * 0.05).toInt()
                 _perBulanValue.value =
-                    app.cicilan.model.CalculateState(isResultThere = nominalPerBulan)
+                    CalculateState(isResultThere = nominalPerBulan)
                 labaValue = laba
             }
         }
-    }*/
+    }
 }
 
 class FormViewModel(private val repo: CicilanRepository) : MainViewModel() {
     var imageUri: Uri? = null
 
-    /*private val _dataModal = MutableSharedFlow<ModalForm>()
+    private val _dataModal = MutableSharedFlow<ModalForm>()
     val dataModal get() = _dataModal
 
-    fun doSave(item: ModalForm) = runInBackground { repo.saveData(item) }*/
+    fun save(item: ModalForm) = runInBackground { repo.insert(item) }
 }
 
 class DetailViewModel(
@@ -110,7 +81,7 @@ class DetailViewModel(
         }
     }*/
 
-    private val _getLog = MutableSharedFlow<State<List<ItemLog>>>(1)
+    private val _getLog = MutableSharedFlow<UiState<List<ItemLog>>>(1)
     val loadLogCicilan get() = _getLog
     fun getLog(id: Int) = runInBackground {
         /*cicilanLog.invoke(id).collectLatest { state ->
