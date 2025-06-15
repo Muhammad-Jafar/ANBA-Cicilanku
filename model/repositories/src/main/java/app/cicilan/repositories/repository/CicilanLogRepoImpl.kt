@@ -17,7 +17,7 @@ class CicilanLogRepoImpl(
 ) : CicilanLogRepository {
     override fun getLog(id: Int): Flow<List<ItemLog>> =
         flow {
-            val getLog = dao.getListLogCicilan(id)
+            val getLog = dao.getListLog(id)
 
             emit(getLog)
         }

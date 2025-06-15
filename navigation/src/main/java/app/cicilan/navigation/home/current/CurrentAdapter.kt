@@ -8,6 +8,7 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import app.cicilan.component.util.rupiahFormat
 import app.cicilan.entities.Item
 import app.cicilan.navigation.R
 import app.cicilan.navigation.databinding.ItemCurrentBinding
@@ -27,8 +28,8 @@ class CurrentAdapter :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(items: Item) = with(binding) {
             avatar.apply {
-                scaleType = if (items.gambarBarang != null) {
-                    setImageURI(items.gambarBarang!!.toUri())
+                scaleType = if (items.image != null) {
+                    setImageURI(items.image!!.toUri())
                     ImageView.ScaleType.CENTER_CROP
                 } else {
                     setBackgroundColor(getColor(this.rootView, R.attr.colorCustomContainer))
@@ -37,27 +38,26 @@ class CurrentAdapter :
                 }
             }
 
-            nameProduct.text = items.namaBarang
-            nameUser.text = items.namaPenyicil
-            /* cicilanPerBulan.text = items.nominalPerBulanToRupiah*/
+            nameProduct.text = items.thingName
+            nameUser.text = items.name
+            /*cicilanPerBulan.text = items.nominalPerBulanToRupiah*/
 
             with(itemProgress) {
                 max = items.nominalBayar
-                /*setProgressCompat(items.nominalLunas, true)*/
+                setProgressCompat(items.nominalLunas!!, true)
             }
-            /*sisaCicilanContent.text =
-                rupiahFormat(items.nominalBayar - items.nominalLunas)*/
+            sisaCicilanContent.text =
+                rupiahFormat(items.nominalBayar - items.nominalLunas!!)
 
             itemView.setOnClickListener {
                 val direction =
-                    HomeFragmentDirections.actionMainToDetail(items.idCicilan)
+                    HomeFragmentDirections.actionMainToDetail(items.id!!)
                 it.findNavController().navigate(direction)
             }
         }
     }
 
     companion object {
-        /* Diff Callback RecycleView for ItemEntity*/
         val DIFF_CALLBACK = object : DiffUtil.ItemCallback<Item>() {
             override fun areItemsTheSame(
                 oldItem: Item,
@@ -67,7 +67,7 @@ class CurrentAdapter :
             override fun areContentsTheSame(
                 oldItem: Item,
                 newItem: Item,
-            ): Boolean = oldItem.idCicilan == newItem.idCicilan
+            ): Boolean = oldItem.id == newItem.id
         }
     }
 }

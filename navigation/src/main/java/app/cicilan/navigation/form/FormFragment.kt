@@ -14,7 +14,9 @@ import androidx.navigation.fragment.navArgs
 import app.cicilan.component.util.addAutoConverterToMoneyFormat
 import app.cicilan.component.util.afterInputNumberChanged
 import app.cicilan.component.util.afterInputStringChanged
+import app.cicilan.component.util.currentDate
 import app.cicilan.component.util.dotPixel
+import app.cicilan.component.util.format
 import app.cicilan.component.util.getNumber
 import app.cicilan.component.util.showSoftKeyboard
 import app.cicilan.entities.ModalForm
@@ -49,13 +51,15 @@ class FormFragment : BaseFragment<MainFormBinding>(MainFormBinding::inflate) {
     }
 
     override fun renderView(bundle: Bundle?) {
-        bundle?.parcelable<Uri>("imageUri")?.let {
-            binding.saveImage.setImageURI(it)
-            viewModel.imageUri = it
-        }
+        bundle?.parcelable<Uri>("imageUri")
+            ?.let {
+                binding.saveImage.setImageURI(it)
+                viewModel.imageUri = it
+            }
+
         if (args.item != null) {
             loadData(args.item!!).also {
-                viewModel.imageUri = args.item?.gambarBarang?.toUri()
+                viewModel.imageUri = args.item?.image?.toUri()
             }
         } else {
             binding.saveImage.layoutParams.height = 0.dotPixel()
@@ -150,7 +154,7 @@ class FormFragment : BaseFragment<MainFormBinding>(MainFormBinding::inflate) {
         }
 
         setReminderSwitch.setOnCheckedChangeListener { _, state ->
-            /*if (state) {
+            if (state) {
                 setReminderContent.apply {
                     visibility = View.VISIBLE
                     setTitleItem(currentDate.format("d MMM yy HH:mm"))
@@ -160,32 +164,32 @@ class FormFragment : BaseFragment<MainFormBinding>(MainFormBinding::inflate) {
                 setReminderContent.apply {
                     visibility = View.GONE
                 }
-            }*/
+            }
         }
     }
 
     private fun loadData(item: ModalForm) =
         with(binding) {
-            if (item.gambarBarang != null) {
+            if (item.image != null) {
                 bgImage.visibility = View.GONE
                 saveImage.apply {
                     layoutParams.height = ViewGroup.LayoutParams.WRAP_CONTENT
-                    /*setImageURI(item.gambarBarang.toUri())*/
+                    setImageURI(item.image!!.toUri())
                 }
             }
             nameInput.apply {
-                setText("item.namaPenyicil")
+                setText("item.namaPenyicil") //FIXME: string literal
                 requestFocus()
                 showSoftKeyboard()
                 afterInputStringChanged { saveButton.isEnabled = this.text.toString().isNotEmpty() }
             }
-            thingInput.setText(item.namaBarang)
-            categoryInput.setText(item.kategori, false)
+            thingInput.setText(item.thing)
+            categoryInput.setText(item.category, false)
             priceInput.addAutoConverterToMoneyFormat(priceInputLayout)
-            priceInput.setText(item.hargaBarang.toString())
+            priceInput.setText(item.price.toString())
             firstPayInput.addAutoConverterToMoneyFormat(firstInputLayout)
             firstPayInput.setText(item.uangMuka.toString())
-            periodPayInput.setText(item.periode)
+            periodPayInput.setText(item.period)
             tenggatPayInput.setText(item.tenggatBayar)
         }
 
@@ -211,15 +215,15 @@ class FormFragment : BaseFragment<MainFormBinding>(MainFormBinding::inflate) {
             periode < 1 -> periodInputLayout.error = getString(R.string.fill_data)
             periode > 30 -> periodInputLayout.error = getString(R.string.form_date_tenggat)
             tenggat.isBlank() -> tenggatInputLayout.error = getString(R.string.fill_data)
-//            tenggat > 12 -> tenggatInputLayout.error = getString(R.string.form_date_periode)
+            tenggat.toInt() > 12 -> tenggatInputLayout.error = getString(R.string.form_date_periode)
             else -> {
                 val imageUri = viewModel.imageUri?.toString().takeIf { it != null }
-                /*viewModel.doSave(
-                    ModalForm(
-                        args.item?.id, imageUri, penyicil, barang,
-                        kategoriInput, harga, dp, periode, tenggat,
-                    ),
-                )*/
+                val form = ModalForm(
+                    args.item?.id, imageUri, penyicil, barang,
+                    kategoriInput, harga, dp, periode, tenggat.toInt(),
+                )
+
+                viewModel.save(form)
                 findNavController().popBackStack()
             }
         }
@@ -240,14 +244,14 @@ class FormFragment : BaseFragment<MainFormBinding>(MainFormBinding::inflate) {
 
         with(form) {
             root.doOnPreDraw { dialogChooser.behavior.peekHeight = it.height }
-//            cameraButton.setOnClickListener {
-//                dialogChooser.dismiss()
-//                fromCamera.launch("image-captured.jpg")
-//            }
-//            galeriButton.setOnClickListener {
-//                dialogChooser.dismiss()
-//                fromStorage.launch("image/*")
-//            }
+            cameraButton.setOnClickListener {
+                dialogChooser.dismiss()
+                fromCamera.launch("image-captured.jpg")
+            }
+            galeriButton.setOnClickListener {
+                dialogChooser.dismiss()
+                fromStorage.launch("image/*")
+            }
         }
         dialogChooser.show()
     }

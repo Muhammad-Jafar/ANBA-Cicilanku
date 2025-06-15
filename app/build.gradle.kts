@@ -58,7 +58,6 @@ dependencies {
     implementation(project(":data:component"))
     implementation(project(":model:entities"))
     implementation(project(":model:repositories"))
-    implementation(project(":model:usecases"))
     implementation(project(":navigation"))
 
     api(libs.bundles.koin)

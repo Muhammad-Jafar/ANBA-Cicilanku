@@ -15,8 +15,8 @@ interface CicilanRepository {
     fun get(status: String): Flow<List<Item>>
     fun getById(id: Int): Flow<Item>
     fun count(status: String): Flow<Int>
-    suspend fun insert(add: ModalForm)
-    suspend fun update(update: ModalForm)
-    suspend fun updateNominal(itemLog: ItemLog)
+    suspend fun insert(data: ModalForm)
+    suspend fun insertLog(data: ItemLog)
+    suspend fun update(data: ModalForm)
     suspend fun delete(id: Int)
 }

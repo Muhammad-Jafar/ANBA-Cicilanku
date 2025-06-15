@@ -10,44 +10,43 @@ import androidx.room.PrimaryKey
  * Find me: 131.powerfull@gmail.com
  */
 
-
 @Entity()
 data class Item(
     @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "id_cicilan")
-    val idCicilan: Int,
-    @ColumnInfo(name = "dibuat_pada")
-    val dibuatPada: Long,
-    @ColumnInfo(name = "lunas_pada")
-    val lunasPada: Long?,
-    @ColumnInfo(name = "gambar_barang")
-    val gambarBarang: String?,
-    @ColumnInfo(name = "nama_penyicil")
-    val namaPenyicil: String,
-    @ColumnInfo(name = "nama_barang")
-    val namaBarang: String,
-    @ColumnInfo(name = "kategori")
-    val kategori: String,
-    @ColumnInfo(name = "harga_barang")
-    val hargaBarang: Int,
+    @ColumnInfo(name = "id")
+    val id: Int? = null,
+    @ColumnInfo(name = "created_at")
+    val createdAt: Long? = null,
+    @ColumnInfo(name = "done_at")
+    val doneAt: Long? = null,
+    @ColumnInfo(name = "image")
+    val image: String? = null,
+    @ColumnInfo(name = "name")
+    val name: String? = null,
+    @ColumnInfo(name = "thing_name")
+    val thingName: String? = null,
+    @ColumnInfo(name = "category")
+    val category: String? = null,
+    @ColumnInfo(name = "price")
+    val price: Int = 0,
     @ColumnInfo(name = "uang_muka")
-    val uangMuka: Int,
+    val uangMuka: Int = 0,
     @ColumnInfo(name = "nominal_bayar")
-    val nominalBayar: Int, // harga_barang - uang_muka
+    val nominalBayar: Int = 0, // harga_barang - uang_muka
     @ColumnInfo(name = "nominal_lunas")
-    val nominalLunas: Int?, // nominal_per_bulan - nominal_bayar
-    @ColumnInfo(name = "periode")
-    val periode: Int,
+    val nominalLunas: Int = 0, // nominal_per_bulan - nominal_bayar
+    @ColumnInfo(name = "period")
+    val period: Int? = null,
     @ColumnInfo(name = "tenggat_bayar")
-    val tenggatBayar: Int,
+    val tenggatBayar: Int = 0,
     @ColumnInfo(name = "per_bulan")
-    val perBulan: Int, // nominal_bayar : periode (Pure utang tanpa laba)
+    val perBulan: Int = 0, // nominal_bayar : periode (Pure utang tanpa laba)
     @ColumnInfo(name = "laba_per_bulan")
-    val labaPerBulan: Int, // nominal_bayar * 5%
+    val labaPerBulan: Int = 0, // nominal_bayar * 5%
     @ColumnInfo(name = "nominal_per_bulan")
-    val nominalPerBulan: Int, // per bulan + laba
+    val nominalPerBulan: Int = 0, // per bulan + laba
     @ColumnInfo(name = "total_laba")
-    val totalLaba: Int,
+    val totalLaba: Int = 0,
     @ColumnInfo(name = "status")
-    val status: String,
+    val status: String = "NO",
 )

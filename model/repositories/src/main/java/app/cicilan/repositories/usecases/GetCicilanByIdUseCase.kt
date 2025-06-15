@@ -1,4 +1,4 @@
-package app.cicilan.usecases
+package app.cicilan.repositories.usecases
 
 import app.cicilan.repositories.contracts.CicilanRepository
 
@@ -8,8 +8,8 @@ import app.cicilan.repositories.contracts.CicilanRepository
  * Find me: 131.powerfull@gmail.com
  */
 
-class GetListCicilanUseCase(
+class GetCicilanByIdUseCase(
     private val repo: CicilanRepository,
 ) {
-    operator fun invoke(status: String) = repo.get(status)
+    operator fun invoke(id: Int) = repo.getById(id)
 }

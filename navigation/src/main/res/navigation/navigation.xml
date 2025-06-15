@@ -28,7 +28,8 @@
 
         <argument android:name="item"
                   app:argType="app.cicilan.entities.ModalForm"
-                  app:nullable="true"/>
+                  app:nullable="true"
+                  android:defaultValue="@null"/>
         <action
                 android:id="@+id/action_form_to_image_crop"
                 app:destination="@id/imageCropFragment"/>

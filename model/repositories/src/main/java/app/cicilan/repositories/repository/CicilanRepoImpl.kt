@@ -27,7 +27,7 @@ class CicilanRepoImpl(
 
     override fun get(status: String): Flow<List<Item>> =
         flow {
-            val list = dao.getListCicilan(status)
+            val list = dao.getList(status)
 
             if (list != null) emit(list)
             else emit(listOf())
@@ -35,81 +35,100 @@ class CicilanRepoImpl(
 
     override fun getById(id: Int): Flow<Item> =
         flow {
-            val getCicilan = dao.getCicilanById(id)
+            val getCicilan = dao.getById(id)
 
             emit(getCicilan)
         }
 
     override fun count(status: String): Flow<Int> =
         flow {
-            val counted = dao.countCicilan(status)
+            val counted = dao.count(status)
 
             if (counted != null) emit(counted)
             else emit(0)
         }
 
-    override suspend fun insert(add: ModalForm) {
-        val nominalMembayar = add.hargaBarang - add.uangMuka
-        val perBulan = nominalMembayar / add.periode
+    override suspend fun insert(data: ModalForm) {
+        val id = data.id
+        val nominalMembayar = data.price - data.uangMuka
+        val perBulan = nominalMembayar / data.period
         val laba = (nominalMembayar * 0.05).toInt()
-        val totalLaba = laba * add.periode
+        val totalLaba = laba * data.period
         val nominalPerBulan = (perBulan + laba)
         val item = Item(
-            add.id!!, currentDate, null, add.gambarBarang, add.namaPenyicil,
-            add.namaBarang, add.kategori, add.hargaBarang, add.uangMuka, nominalMembayar,
-            0, add.periode, add.tenggatBayar, perBulan, laba, nominalPerBulan, totalLaba, "NO",
+            id = id,
+            createdAt = currentDate,
+            doneAt = null,
+            image = data.image,
+            name = data.person,
+            thingName = data.thing,
+            price = data.price,
+            category = data.category,
+            uangMuka = data.uangMuka,
+            nominalBayar = nominalMembayar,
+            nominalLunas = 0,
+            period = data.period,
+            tenggatBayar = data.tenggatBayar,
+            perBulan = perBulan,
+            labaPerBulan = laba,
+            nominalPerBulan = nominalPerBulan,
+            totalLaba = totalLaba,
+            status = "NO",
         )
-        dao.insertCicilan(item)
+
+        dao.store(item)
     }
 
-    override suspend fun update(update: ModalForm) {
-        if (update.id != null) {
-            val cicilan = dao.getCicilanById(update.id!!)
+    override suspend fun update(data: ModalForm) {
+        if (data.id != null) {
+            val cicilan = dao.getById(data.id!!)
 
             with(cicilan) {
                 val image =
-                    if (update.gambarBarang == gambarBarang) {
-                        gambarBarang
+                    if (data.image == image) {
+                        image
                     } else {
-                        update.gambarBarang
+                        data.image
                     }
-                val nominalMembayar = update.hargaBarang - update.uangMuka
-                val perBulan = nominalMembayar / update.periode
+                val nominalMembayar = data.price - data.uangMuka
+                val perBulan = nominalMembayar / data.period
                 val laba = (nominalMembayar * 0.05).toInt()
-                val totalLaba = laba * update.periode
+                val totalLaba = laba * data.period
                 val nominalPerBulan = (perBulan + laba)
-
                 val item = Item(
-                    idCicilan, dibuatPada, null, image, update.namaPenyicil,
-                    update.namaBarang, update.kategori, update.hargaBarang, update.uangMuka,
-                    nominalMembayar, nominalLunas, update.periode, update.tenggatBayar,
+                    id, createdAt, null, image, data.person,
+                    data.thing, data.category, data.price, data.uangMuka,
+                    nominalMembayar, nominalLunas, data.period, data.tenggatBayar,
                     perBulan, laba, nominalPerBulan, totalLaba, "NO",
                 )
-                dao.updateItem(item)
+
+                dao.update(item)
             }
         }
     }
 
-    override suspend fun updateNominal(itemLog: ItemLog) {
-        val nominalBayar = dao.getCurrentNominalBayar(itemLog.idCicilan)
-        val nominalLunas = dao.getCurrentNominalLunas(itemLog.idCicilan)
-        val currentNominaLunas = itemLog.nominalTransaksi + nominalLunas
+    override suspend fun insertLog(data: ItemLog) {
+        with(data) {
+            val nominalBayar = dao.getCurrentNominalBayar(cicilanId!!)
+            val nominalLunas = dao.getCurrentNominalLunas(cicilanId!!)
+            val currentNominaLunas = data.amount + nominalLunas
 
-        if (currentNominaLunas == nominalBayar) {
-            runBlocking {
-                db.withTransaction {
-                    dao.setNominalLunas(itemLog.idCicilan, itemLog.nominalTransaksi)
-                    dao.addCicilanLog(itemLog)
+            if (currentNominaLunas == nominalBayar) {
+                runBlocking {
+                    db.withTransaction {
+                        dao.setNominalLunas(cicilanId!!, amount)
+                        dao.storeLog(data)
+                    }
+                    db.withTransaction {
+                        dao.setStatusLunas(cicilanId!!, "YES")
+                        dao.setDateLunas(cicilanId!!, currentDate)
+                    }
                 }
+            } else {
                 db.withTransaction {
-                    dao.setStatusLunas(itemLog.idCicilan, "YES")
-                    dao.setDateLunas(itemLog.idCicilan, currentDate)
+                    dao.setNominalLunas(cicilanId!!, amount)
+                    dao.storeLog(data)
                 }
-            }
-        } else {
-            db.withTransaction {
-                dao.setNominalLunas(itemLog.idCicilan, itemLog.nominalTransaksi)
-                dao.addCicilanLog(itemLog)
             }
         }
     }
@@ -117,8 +136,8 @@ class CicilanRepoImpl(
     override suspend fun delete(id: Int) {
         db.withTransaction {
             with(dao) {
-                deleteFromCicilan(id)
-                deleteFromCicilanLog(id)
+                this.delete(id)
+                deleteLog(id)
                 getImagePathById(id).also {
                     it?.toUri()
                         ?.path

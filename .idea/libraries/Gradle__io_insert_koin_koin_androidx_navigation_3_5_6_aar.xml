@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: io.insert-koin:koin-androidx-navigation:3.5.6@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/cba38aebff549248cb7a2b755383fb1f/transformed/koin-androidx-navigation-3.5.6/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/cba38aebff549248cb7a2b755383fb1f/transformed/koin-androidx-navigation-3.5.6/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/a5050193ab6275e0bc2fd2fe0183a93c/transformed/koin-androidx-navigation-3.5.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/a5050193ab6275e0bc2fd2fe0183a93c/transformed/koin-androidx-navigation-3.5.6/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

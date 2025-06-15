@@ -32,7 +32,7 @@ class DetailLogAdapter :
             override fun areItemsTheSame(
                 oldItem: ItemLog,
                 newItem: ItemLog,
-            ): Boolean = oldItem.idLog == newItem.idLog
+            ): Boolean = oldItem.id == newItem.id
 
             override fun areContentsTheSame(
                 oldItem: ItemLog,

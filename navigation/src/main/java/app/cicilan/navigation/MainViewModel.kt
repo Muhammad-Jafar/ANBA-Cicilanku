@@ -6,13 +6,17 @@ import androidx.lifecycle.ViewModel
 import app.cicilan.component.util.mapWithStateInWhileSubscribed
 import app.cicilan.component.util.runInBackground
 import app.cicilan.entities.CalculateState
+import app.cicilan.entities.Item
 import app.cicilan.entities.ItemLog
 import app.cicilan.entities.ModalForm
-import app.cicilan.entities.UiState
-import app.cicilan.repositories.contracts.CicilanRepository
 import app.cicilan.repositories.contracts.SettingRepository
-import app.cicilan.usecases.CountCicilanUseCase
-import app.cicilan.usecases.GetListCicilanUseCase
+import app.cicilan.repositories.usecases.CountCicilanUseCase
+import app.cicilan.repositories.usecases.DeleteCicilanUseCase
+import app.cicilan.repositories.usecases.GetCicilanByIdUseCase
+import app.cicilan.repositories.usecases.GetListCicilanLogUseCase
+import app.cicilan.repositories.usecases.GetListCicilanUseCase
+import app.cicilan.repositories.usecases.InsertCicilanLogUseCase
+import app.cicilan.repositories.usecases.InsertCicilanUseCase
 import kotlinx.coroutines.flow.MutableSharedFlow
 
 /**
@@ -25,20 +29,19 @@ open class MainViewModel : ViewModel()
 
 class HomeViewModel(
     countCicilan: CountCicilanUseCase,
-    private val getCicilan: GetListCicilanUseCase,
+    private val listCicilan: GetListCicilanUseCase,
 ) : MainViewModel() {
 
     val getTotalCurrent = countCicilan("NO")
         .mapWithStateInWhileSubscribed(0)
     val getTotalDone = countCicilan("YES")
         .mapWithStateInWhileSubscribed(0)
-
-    fun getList(status: String) = getCicilan(status)
-        .mapWithStateInWhileSubscribed(listOf())
-
     private val _perBulanValue = MutableLiveData(CalculateState())
     val perBulanValue get() = _perBulanValue
     var labaValue = 0
+
+    fun getList(status: String) = listCicilan(status)
+        .mapWithStateInWhileSubscribed(listOf())
 
     fun calculate(harga: Int, dp: Int, periode: Int) {
         when {
@@ -58,44 +61,32 @@ class HomeViewModel(
     }
 }
 
-class FormViewModel(private val repo: CicilanRepository) : MainViewModel() {
-    var imageUri: Uri? = null
-
+class FormViewModel(private val cicilan: InsertCicilanUseCase) : MainViewModel() {
     private val _dataModal = MutableSharedFlow<ModalForm>()
     val dataModal get() = _dataModal
+    var imageUri: Uri? = null
 
-    fun save(item: ModalForm) = runInBackground { repo.insert(item) }
+    fun save(item: ModalForm) =
+        runInBackground { cicilan.invoke(item) }
 }
 
 class DetailViewModel(
-    /*private val cicilanLog: GetListCicilanLogUseCase,
-    private val useCaseViewer: CicilanViewerUseCase,*/
+    private val getById: GetCicilanByIdUseCase,
+    private val getLog: GetListCicilanLogUseCase,
+    private val storeLog: InsertCicilanLogUseCase,
+    private val delete: DeleteCicilanUseCase
 ) : MainViewModel() {
-    var cicilanId = 0
+    fun getCicilanById(id: Int) = getById(id)
+        .mapWithStateInWhileSubscribed(Item())
 
-    /*private val _getDetail = MutableStateFlow<State>(State.Empty)
-    val loadDetail get() = _getDetail
-    fun getDetail(id: String) = runInBackground {
-        useCaseViewer.getById(id).run {
-            _getDetail.value = State.Success(this.toString())
-        }
-    }*/
+    fun getCicilanLog(id: Int) = getLog(id)
+        .mapWithStateInWhileSubscribed(ItemLog())
 
-    private val _getLog = MutableSharedFlow<UiState<List<ItemLog>>>(1)
-    val loadLogCicilan get() = _getLog
-    fun getLog(id: Int) = runInBackground {
-        /*cicilanLog.invoke(id).collectLatest { state ->
-            when (state) {
-                is State.Loading -> {}
-                is State.Empty -> {}
-                is State.Error -> state.cause
-                is State.Success -> state.data
-            }
-        }*/
-    }
+    fun storeCicilanLog(item: ItemLog) =
+        runInBackground { storeLog(item) }
 
-    /*fun updateNominal(item: ItemLogEntity) = runInBackground { repo.updateNominal(item) }
-    fun delete(cicilanId: String) = runInBackground { repo.delete(cicilanId) }*/
+    fun deleteCicilan(id: Int) =
+        runInBackground { delete(id) }
 }
 
 class SettingsViewModel(private val repo: SettingRepository) : MainViewModel() {

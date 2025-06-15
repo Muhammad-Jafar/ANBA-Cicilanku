@@ -27,8 +27,8 @@ class DoneAdapter : ListAdapter<Item, DoneAdapter.ViewHolder>(DIFF_CALLBACK) {
         RecyclerView.ViewHolder(binding.root) {
         fun bind(items: Item) = with(binding) {
             avatar.apply {
-                scaleType = if (items.gambarBarang != null) {
-                    setImageURI(items.gambarBarang!!.toUri())
+                scaleType = if (items.image != null) {
+                    setImageURI(items.image!!.toUri())
                     ImageView.ScaleType.CENTER_CROP
                 } else {
                     setBackgroundColor(
@@ -42,26 +42,25 @@ class DoneAdapter : ListAdapter<Item, DoneAdapter.ViewHolder>(DIFF_CALLBACK) {
                 }
             }
 
-            nameProduct.text = items.namaBarang
-            nameUser.text = items.namaPenyicil
+            nameProduct.text = items.thingName
+            nameUser.text = items.name
             /*totalLaba.text = "+ ".plus(items.totalLabaToRupiah)
             lunasPada.text = items.lunasPadaFormat*/
 
             itemView.setOnClickListener {
                 val direction =
-                    HomeFragmentDirections.actionMainToDetail(items.idCicilan)
+                    HomeFragmentDirections.actionMainToDetail(items.id!!)
                 it.findNavController().navigate(direction)
             }
         }
     }
 
     companion object {
-        /* Diff Callback RecycleView for ItemLogEntity*/
         val DIFF_CALLBACK_LOG = object : DiffUtil.ItemCallback<Item>() {
             override fun areItemsTheSame(
                 oldItem: Item,
                 newItem: Item,
-            ): Boolean = oldItem.idCicilan == newItem.idCicilan
+            ): Boolean = oldItem.id == newItem.id
 
             override fun areContentsTheSame(
                 oldItem: Item,

@@ -13,10 +13,9 @@ import androidx.room.PrimaryKey
 @Entity()
 data class ItemLog(
     @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "id_log")
-    val idLog: Int,
-    @ColumnInfo(name = "id_cicilan") val idCicilan: Int,
-    @ColumnInfo(name = "tgl_transaksi") val tglTransaksi: Long,
-    @ColumnInfo(name = "nominal_transaksi") val nominalTransaksi: Int,
-    @ColumnInfo(name = "catatan") val catatan: String?,
+    @ColumnInfo(name = "id") val id: Int? = null,
+    @ColumnInfo(name = "cicilan_id") val cicilanId: Int? = null,
+    @ColumnInfo(name = "date") val date: Long? = null,
+    @ColumnInfo(name = "amount") val amount: Int = 0,
+    @ColumnInfo(name = "description") val description: String = "",
 )

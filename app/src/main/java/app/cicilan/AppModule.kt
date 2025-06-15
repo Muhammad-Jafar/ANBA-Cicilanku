@@ -23,9 +23,9 @@ import app.cicilan.repositories.contracts.SettingRepository
 import app.cicilan.repositories.repository.CicilanLogRepoImpl
 import app.cicilan.repositories.repository.CicilanRepoImpl
 import app.cicilan.repositories.repository.SettingRepoImpl
-import app.cicilan.usecases.CountCicilanUseCase
-import app.cicilan.usecases.GetListCicilanLogUseCase
-import app.cicilan.usecases.GetListCicilanUseCase
+import app.cicilan.repositories.usecases.CountCicilanUseCase
+import app.cicilan.repositories.usecases.GetListCicilanLogUseCase
+import app.cicilan.repositories.usecases.GetListCicilanUseCase
 import com.google.android.material.color.DynamicColors
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

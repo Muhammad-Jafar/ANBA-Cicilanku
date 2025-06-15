@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/component/ANBA-Cicilanku.Cicilan.data.component.iml" filepath="$PROJECT_DIR$/.idea/modules/data/component/ANBA-Cicilanku.Cicilan.data.component.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/component/ANBA-Cicilanku.Cicilan.data.component.androidTest~1.iml" filepath="$PROJECT_DIR$/.idea/modules/data/component/ANBA-Cicilanku.Cicilan.data.component.androidTest~1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/component/ANBA-Cicilanku.Cicilan.data.component.main~1.iml" filepath="$PROJECT_DIR$/.idea/modules/data/component/ANBA-Cicilanku.Cicilan.data.component.main~1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/component/ANBA-Cicilanku.Cicilan.data.component.unitTest~1.iml" filepath="$PROJECT_DIR$/.idea/modules/data/component/ANBA-Cicilanku.Cicilan.data.component.unitTest~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/component/ANBA-Cicilanku.Cicilan.data.component.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/data/component/ANBA-Cicilanku.Cicilan.data.component.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/component/ANBA-Cicilanku.Cicilan.data.component.main.iml" filepath="$PROJECT_DIR$/.idea/modules/data/component/ANBA-Cicilanku.Cicilan.data.component.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/component/ANBA-Cicilanku.Cicilan.data.component.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/data/component/ANBA-Cicilanku.Cicilan.data.component.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Cicilan.iml" filepath="$PROJECT_DIR$/.idea/modules/Cicilan.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Cicilan.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Cicilan.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Cicilan.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Cicilan.app.androidTest.iml" />

@@ -44,7 +44,6 @@ android {
 
 dependencies {
     implementation(project(":data:component"))
-    implementation(project(":model:usecases"))
     implementation(project(":model:entities"))
     implementation(project(":model:repositories"))
 

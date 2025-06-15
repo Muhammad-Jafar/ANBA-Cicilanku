@@ -1,4 +1,4 @@
-package app.cicilan.usecases
+package app.cicilan.repositories.usecases
 
 import app.cicilan.repositories.contracts.CicilanLogRepository
 

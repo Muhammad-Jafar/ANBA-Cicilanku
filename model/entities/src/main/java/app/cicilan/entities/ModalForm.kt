@@ -12,12 +12,12 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class ModalForm(
     val id: Int?,
-    val gambarBarang: String? = null,
-    val namaPenyicil: String,
-    val namaBarang: String,
-    val kategori: String,
-    val hargaBarang: Int,
+    val image: String? = null,
+    val person: String,
+    val thing: String,
+    val category: String,
+    val price: Int,
     val uangMuka: Int,
-    val periode: Int,
-    val tenggatBayar: Int,
+    val period: Int,
+    val tenggatBayar: Int, //FIXME: consider to use long as date instead of int
 ) : Parcelable

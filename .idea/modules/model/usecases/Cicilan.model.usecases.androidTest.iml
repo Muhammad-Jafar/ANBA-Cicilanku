@@ -15,7 +15,7 @@
       <configuration version="5" platform="JVM 17" allPlatforms="JVM [17]" useProjectSettings="false">
         <additionalVisibleModuleNames>:model:usecases:main</additionalVisibleModuleNames>
         <compilerSettings>
-          <option name="additionalArguments" value="-Xuse-inline-scopes-numbers -Xcontext-receivers" />
+          <option name="additionalArguments" value="-Xuse-inline-scopes-numbers" />
         </compilerSettings>
         <compilerArguments>
           <flagArguments>
@@ -50,14 +50,18 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_17">
     <output-test url="file://$MODULE_DIR$/../../../../model/usecases/build/intermediates/javac/debugAndroidTest/compileDebugAndroidTestJavaWithJavac/classes" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../../model/usecases/build/generated/ap_generated_sources/debugAndroidTest/out" />
+    <content url="file://$MODULE_DIR$/../../../../model/usecases/build/generated/ap_generated_sources/debugAndroidTest/out">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../model/usecases/build/generated/ap_generated_sources/debugAndroidTest/out" isTestSource="true" generated="true" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../../model/usecases/build/generated/ksp/debugAndroidTest/java" />
     <content url="file://$MODULE_DIR$/../../../../model/usecases/build/generated/ksp/debugAndroidTest/kotlin" />
     <content url="file://$MODULE_DIR$/../../../../model/usecases/build/generated/res/resValues/androidTest/debug">
       <sourceFolder url="file://$MODULE_DIR$/../../../../model/usecases/build/generated/res/resValues/androidTest/debug" type="java-test-resource" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../model/usecases/build/generated/res/resValues/androidTest/debug" type="java-test-resource" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../model/usecases/build/generated/res/resValues/androidTest/debug" type="java-test-resource" generated="true" />
     </content>
     <content url="file://$MODULE_DIR$/../../../../model/usecases/build/generated/source/buildConfig/androidTest/debug">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../model/usecases/build/generated/source/buildConfig/androidTest/debug" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../model/usecases/build/generated/source/buildConfig/androidTest/debug" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../model/usecases/build/generated/source/buildConfig/androidTest/debug" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../model/usecases/build/generated/source/buildConfig/androidTest/debug" isTestSource="true" generated="true" />
@@ -79,6 +83,10 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.room:room-runtime-android:2.7.1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.sqlite:sqlite-android:2.5.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.sqlite:sqlite-framework-android:2.5.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.datastore:datastore-preferences-android:1.1.7@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.datastore:datastore-android:1.1.7@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.datastore:datastore-core-android:1.1.7@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.datastore:datastore-preferences-core-android:1.1.7@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation-jvm:1.9.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:2.1.21" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains:annotations:23.0.0" level="project" />
@@ -89,6 +97,10 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.collection:collection-jvm:1.4.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.room:room-common-jvm:2.7.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.datastore:datastore-core-okio-jvm:1.1.7" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.okio:okio-jvm:3.4.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="Cicilan.model.usecases.main" />
 </module>
