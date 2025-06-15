@@ -18,6 +18,113 @@
         <target>android-33</target>
       </config>
     </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/layout/dialog_calculate_cicilan.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/layout/dialog_input_nominal.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/layout/dialog_pick_image.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/layout/dialog_settings_language.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/layout/dialog_settings_theme.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/layout/item_current.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/layout/item_detail_log.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/layout/item_done.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/layout/main_detail.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/layout/main_detail_log.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/layout/main_form.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/layout/main_home.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/layout/main_home_list.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/layout/main_image_crop.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/layout/main_settings.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/layout/main_settings_about.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/layout/main_settings_donate.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/layout/view_no_data_current.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/layout/view_no_data_done.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/layout/view_no_transaction.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/navigation/navigation.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+    </layouts>
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
@@ -27,16 +134,532 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4fd29ba-c0c0-4567-a4c4-fbc2545734e6" name="Changes" comment="Refactoring ui">
+    <list default="true" id="c4fd29ba-c0c0-4567-a4c4-fbc2545734e6" name="Changes" comment="refactoring modules">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_10_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_ktx_1_10_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_4_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_jvm_1_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_7_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_7_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_jvm_1_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_ktx_1_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_concurrent_concurrent_futures_ktx_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_2_2_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_16_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_ktx_1_16_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_viewtree_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_databinding_viewbinding_8_10_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_datastore_datastore_android_1_1_7_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_datastore_datastore_core_android_1_1_7_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_datastore_datastore_core_okio_jvm_1_1_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_datastore_datastore_preferences_android_1_1_7_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_datastore_datastore_preferences_core_android_1_1_7_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_5_4_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_8_8_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_ktx_1_8_8_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_jvm_2_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_6_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_9_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_6_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_9_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_ktx_2_9_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_ktx_2_9_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_6_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_android_2_9_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_ktx_android_2_9_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_6_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_android_2_9_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_ktx_2_9_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_savedstate_2_6_2_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_savedstate_android_2_9_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_common_android_2_9_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_fragment_2_9_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_fragment_ktx_2_9_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_runtime_android_2_9_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_ui_2_9_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_ui_ktx_2_9_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_4_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_common_jvm_2_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_ktx_2_7_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_runtime_android_2_7_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_testing_android_2_7_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_android_1_3_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_ktx_1_3_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_sqlite_sqlite_android_2_5_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_sqlite_sqlite_framework_android_2_5_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_6_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_6_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_6_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_2_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_7_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_6_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_services_storage_1_5_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_tracing_tracing_1_2_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_5_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__co_touchlab_stately_concurrency_jvm_2_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__co_touchlab_stately_concurrent_collections_jvm_2_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_12_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_18_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_jvm_3_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_insert_koin_koin_android_3_5_6_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_insert_koin_koin_androidx_navigation_3_5_6_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_insert_koin_koin_core_jvm_3_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_android_extensions_runtime_2_1_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_parcelize_runtime_2_1_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_2_1_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_android_1_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_core_jvm_1_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_test_jvm_1_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_serialization_core_jvm_1_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jspecify_jspecify_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/data/component/ANBA-Cicilanku.Cicilan.data.component.androidTest~1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/data/component/ANBA-Cicilanku.Cicilan.data.component.main~1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/data/component/ANBA-Cicilanku.Cicilan.data.component.unitTest~1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/data/db/Cicilan.data.local.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/data/local/Cicilan.data.local.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/data/local/Cicilan.data.local.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/data/local/Cicilan.data.local.unitTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/model/entities/Cicilan.model.entities.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/model/entities/Cicilan.model.entities.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/model/entities/Cicilan.model.entities.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/model/entities/Cicilan.model.entities.unitTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/model/repositories/Cicilan.model.repositories.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/model/repositories/Cicilan.model.repositories.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/model/repositories/Cicilan.model.repositories.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/model/repositories/Cicilan.model.repositories.unitTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/model/usecases/Cicilan.model.usecases.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/model/usecases/Cicilan.model.usecases.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/model/usecases/Cicilan.model.usecases.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/model/usecases/Cicilan.model.usecases.unitTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/presentation-module/Cicilan.navigation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_8_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_8_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_8_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_ktx_1_8_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_3_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_jvm_1_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_6_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_6_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_testing_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_testing_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_ktx_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_2_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_2_0_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_2_1_4_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_12_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_ktx_1_12_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_splashscreen_1_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_splashscreen_1_0_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_databinding_viewbinding_8_2_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_datastore_datastore_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_datastore_datastore_core_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_datastore_datastore_preferences_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_datastore_datastore_preferences_core_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_dynamicanimation_dynamicanimation_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_dynamicanimation_dynamicanimation_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_3_6_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_6_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_ktx_1_6_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_java8_2_7_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_java8_2_9_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_6_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_7_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_6_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_7_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_ktx_2_7_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_ktx_2_7_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_6_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_7_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_ktx_2_7_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_6_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_7_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_ktx_2_7_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_savedstate_2_6_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_savedstate_2_7_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_common_2_7_6_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_common_ktx_2_7_6_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_fragment_2_7_6_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_fragment_ktx_2_7_6_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_runtime_2_7_6_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_runtime_ktx_2_7_6_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_ui_2_7_6_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_ui_ktx_2_7_6_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_preference_preference_1_2_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_preference_preference_1_2_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_preference_preference_ktx_1_2_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_preference_preference_ktx_1_2_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_3_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_common_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_ktx_2_6_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_migration_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_runtime_2_6_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_testing_2_6_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_2_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_2_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_ktx_1_2_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_sqlite_sqlite_2_4_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_sqlite_sqlite_framework_2_4_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_annotation_1_0_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_5_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_5_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_5_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_5_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_6_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_5_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_services_storage_1_4_2_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_tracing_tracing_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_2_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_4_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_1_0_beta02_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_11_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_vanniktech_android_image_cropper_4_5_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_vanniktech_android_image_cropper_4_5_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_insert_koin_koin_android_3_5_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_insert_koin_koin_androidx_navigation_3_5_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_insert_koin_koin_core_jvm_3_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_android_extensions_runtime_1_9_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_parcelize_runtime_1_9_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_9_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_android_1_6_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_android_1_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_core_jvm_1_6_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_core_jvm_1_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_test_jvm_1_7_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Cicilan.app.androidTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/navigation/Cicilan.navigation.unitTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Cicilan.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Cicilan.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Cicilan.app.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/navigation/Cicilan.navigation.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Cicilan.app.unitTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/navigation/Cicilan.navigation.androidTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data-module/Cicilan.data-module.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/data-module/Cicilan.data.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data-module/component/Cicilan.data-module.component.androidTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data-module/component/Cicilan.data-module.component.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/data-module/component/Cicilan.data.component.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data-module/component/Cicilan.data-module.component.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data-module/component/Cicilan.data-module.component.unitTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data-module/db/Cicilan.data-module.db.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/data-module/db/Cicilan.data.local.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data-module/db/Cicilan.data-module.db.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data-module/db/Cicilan.data-module.db.unitTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data-module/preference/Cicilan.data-module.preference.androidTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data-module/preference/Cicilan.data-module.preference.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/data-module/preference/Cicilan.data.preference.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data-module/preference/Cicilan.data-module.preference.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data-module/preference/Cicilan.data-module.preference.unitTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data-module/repository/Cicilan.data-module.repository.unitTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data-module/util/Cicilan.data-module.util.androidTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data-module/util/Cicilan.data-module.util.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/data-module/util/Cicilan.data.util.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data-module/util/Cicilan.data-module.util.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data-module/util/Cicilan.data-module.util.unitTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/domain-module/Cicilan.domain-module.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/domain-module/Cicilan.model.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/domain-module/entities/Cicilan.domain-module.entities.androidTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/domain-module/entities/Cicilan.domain-module.entities.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/domain-module/entities/Cicilan.domain-module.entities.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/domain-module/entities/Cicilan.domain-module.entities.unitTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/domain-module/repositories/Cicilan.domain-module.repositories.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/domain-module/usecases/Cicilan.domain-module.usecases.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/presentation-module/Cicilan.presentation-module.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/data/component/ANBA-Cicilanku.Cicilan.data.component.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/cicilan/AppModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/cicilan/AppModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/cicilan/provider/RoomDbProvider.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/consumer-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/consumer-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/java/app/cicilan/customview/button/CustomButtonMenu.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/java/app/cicilan/customview/button/CustomButtonMenuSecond.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/java/app/cicilan/customview/button/CustomButtonMenuThird.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/java/app/cicilan/customview/button/CustomCheckbox.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/java/app/cicilan/customview/layout/CustomLayoutItem.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/java/app/cicilan/customview/layout/CustomLayoutMenu.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/java/app/cicilan/customview/preference/CustomPreference.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_add.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_add.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_add_picture.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_add_picture.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_arrow_back.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_arrow_back.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_arrow_more.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_arrow_more.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_bg_image.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_bg_image.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_bill_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_bill_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_calculate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_calculate.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_camera.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_camera.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_close.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_close.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_crop_rotate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_crop_rotate.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_current.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_current.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_date_create.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_date_create.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_date_finished.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_date_finished.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_delete.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_delete.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_donate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_donate.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_done.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_done.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_edit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_edit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_faq.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_faq.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_feedback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_feedback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_language.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_language.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_notes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_notes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_privacy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_privacy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_rate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_rate.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_setting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_setting.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_sleeping_square.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_sleeping_square.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_storage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_storage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_theme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_theme.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_user.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/drawable/icon_version.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/drawable/icon_version.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/font/quick_sand_bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/font/quick_sand_bold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/font/quick_sand_medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/font/quick_sand_medium.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/font/quick_sand_regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/font/quick_sand_regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/font/quick_sand_semi_bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/font/quick_sand_semi_bold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/layout/custom_button_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/layout/custom_button_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/layout/custom_button_menu_second.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/layout/custom_button_menu_second.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/layout/custom_button_menu_third.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/layout/custom_button_menu_third.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/layout/custom_checkbox.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/layout/custom_checkbox.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/layout/custom_layout_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/layout/custom_layout_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/layout/custom_layout_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/layout/custom_layout_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/layout/custom_preference.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/layout/custom_preference.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/values-en/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/values-en/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/values/attrs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/values/attrs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/component/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/db/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/data/local/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/db/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/data/local/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/db/consumer-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/data/local/consumer-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/db/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/data/local/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/db/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/local/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/db/src/main/java/app/cicilan/db/CicilanDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/local/src/main/java/app/cicilan/local/db/CicilanDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/db/src/main/java/app/cicilan/db/CicilanDb.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/local/src/main/java/app/cicilan/local/db/CicilanDb.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/db/src/main/java/app/cicilan/db/DbProvider.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/local/src/main/java/app/cicilan/local/db/DbProvider.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/di/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/di/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/di/consumer-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/consumer-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/di/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/di/src/androidTest/java/app/cicilan/di/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/di/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/di/src/main/java/app/cicilan/di/AppModule.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/di/src/test/java/app/cicilan/di/ExampleUnitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/test/java/app/cicilan/navigation/ExampleUnitTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/lib/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/lib/src/main/kotlin/data/module/Library.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/lib/src/test/kotlin/data/module/LibraryTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/preference/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/model/repositories/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/preference/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/preference/consumer-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/model/repositories/consumer-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/preference/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/model/repositories/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/preference/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/model/repositories/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/preference/src/main/java/app/cicilan/preference/ConstantaStore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/local/src/main/java/app/cicilan/local/preference/ConstantaStore.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/preference/src/main/java/app/cicilan/preference/StoreData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/local/src/main/java/app/cicilan/local/preference/StoreData.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/repository/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/model/usecases/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/repository/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/repository/consumer-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/model/usecases/consumer-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/repository/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/model/usecases/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/repository/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/model/usecases/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/repository/src/main/java/app/cicilan/repository/CicilanLogRepoImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/repositories/src/main/java/app/cicilan/repositories/repository/CicilanLogRepoImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/repository/src/main/java/app/cicilan/repository/CicilanRepoImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/repositories/src/main/java/app/cicilan/repositories/repository/CicilanRepoImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/repository/src/main/java/app/cicilan/repository/CicilanViewerRepoImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/repositories/src/main/java/app/cicilan/repositories/repository/CicilanViewerRepoImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/util/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/util/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/util/consumer-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/consumer-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/util/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/util/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-module/util/src/main/java/app/cicilan/util/Extensions.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/entities/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/entities/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/entities/consumer-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/entities/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/entities/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/entities/src/main/java/app/cicilan/entities/CalculateState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/src/main/java/app/cicilan/entities/CalculateState.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/entities/src/main/java/app/cicilan/entities/CicilanLogState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/src/main/java/app/cicilan/entities/CicilanLogState.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/entities/src/main/java/app/cicilan/entities/FormState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/src/main/java/app/cicilan/entities/FormState.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/entities/src/main/java/app/cicilan/entities/ItemEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/src/main/java/app/cicilan/entities/Item.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/entities/src/main/java/app/cicilan/entities/ItemLogEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/src/main/java/app/cicilan/entities/ItemLog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/entities/src/main/java/app/cicilan/entities/ModalForm.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/src/main/java/app/cicilan/entities/ModalForm.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/entities/src/main/java/app/cicilan/entities/State.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/src/main/java/app/cicilan/entities/State.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/lib/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/lib/src/main/kotlin/Library.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/lib/src/test/kotlin/LibraryTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/repositories/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/repositories/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/model/repositories/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/repositories/consumer-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/repositories/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/repositories/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/repositories/src/main/java/app/cicilan/repositories/CicilanLogRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/repositories/src/main/java/app/cicilan/repositories/contracts/CicilanLogRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/repositories/src/main/java/app/cicilan/repositories/CicilanRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/repositories/src/main/java/app/cicilan/repositories/contracts/CicilanRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/repositories/src/main/java/app/cicilan/repositories/CicilanViewerRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/repositories/src/main/java/app/cicilan/repositories/contracts/CicilanViewerRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/usecases/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/usecases/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/model/usecases/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/usecases/consumer-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/usecases/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/usecases/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/usecases/src/main/java/app/cicilan/usecases/CicilanUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/usecases/src/main/java/app/cicilan/usecases/CicilanUseCase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/usecases/src/main/java/app/cicilan/usecases/CicilanViewerUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/usecases/src/main/java/app/cicilan/usecases/CicilanViewerUseCase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/usecases/src/main/java/app/cicilan/usecases/CountCicilanUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/usecases/src/main/java/app/cicilan/usecases/CountCicilanUseCase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain-module/usecases/src/main/java/app/cicilan/usecases/GetListCicilanLogUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/usecases/src/main/java/app/cicilan/usecases/GetListCicilanLogUseCase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/consumer-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/androidTest/java/app/cicilan/presentation/ExampleInstrumentedTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/androidTest/java/app/cicilan/navigation/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/java/app/cicilan/presentation/BaseFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/BaseFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/java/app/cicilan/presentation/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/java/app/cicilan/presentation/MainViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/MainViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/java/app/cicilan/presentation/analyze/FragmentFramerateTracer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/analyze/FragmentFramerateTracer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/java/app/cicilan/presentation/analyze/MyBaseFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/analyze/MyBaseFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/java/app/cicilan/presentation/form/CropImageFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/form/CropImageFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/java/app/cicilan/presentation/form/FormFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/form/FormFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/java/app/cicilan/presentation/form/ImageChooser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/form/ImageChooser.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/java/app/cicilan/presentation/home/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/home/HomeFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/java/app/cicilan/presentation/home/MainListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/home/MainListFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/java/app/cicilan/presentation/home/current/CurrentAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/home/current/CurrentAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/java/app/cicilan/presentation/home/detail/DetailFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/home/detail/DetailFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/java/app/cicilan/presentation/home/detail/DetailLogAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/home/detail/DetailLogAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/java/app/cicilan/presentation/home/detail/DetailLogFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/home/detail/DetailLogFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/java/app/cicilan/presentation/home/done/DoneAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/home/done/DoneAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/java/app/cicilan/presentation/settings/SettingsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/settings/SettingsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/java/app/cicilan/presentation/settings/about/AboutFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/settings/about/AboutFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/java/app/cicilan/presentation/settings/donate/DonateFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/settings/donate/DonateFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/anim/shake.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/anim/shake.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/app_logo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/app_logo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/app_logo_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/app_logo_foreground.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_add.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_add.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_add_picture.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_add_picture.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_arrow_back.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_arrow_back.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_arrow_more.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_arrow_more.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_bg_image.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_bg_image.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_bill_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_bill_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_calculate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_calculate.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_camera.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_camera.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_close.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_close.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_crop_rotate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_crop_rotate.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_current.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_current.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_date_create.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_date_create.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_date_finished.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_date_finished.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_delete.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_delete.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_donate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_donate.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_done.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_done.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_edit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_edit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_faq.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_faq.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_feedback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_feedback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_language.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_language.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_notes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_notes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_privacy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_privacy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_rate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_rate.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_setting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_setting.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_sleeping_square.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_sleeping_square.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_storage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_storage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_theme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_theme.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_user.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/drawable/icon_version.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/drawable/icon_version.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/font/quick_sand_bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/font/quick_sand_bold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/font/quick_sand_medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/font/quick_sand_medium.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/font/quick_sand_regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/font/quick_sand_regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/font/quick_sand_semi_bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/font/quick_sand_semi_bold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/layout/dialog_calculate_cicilan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/dialog_calculate_cicilan.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/layout/dialog_input_nominal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/dialog_input_nominal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/layout/dialog_pick_image.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/dialog_pick_image.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/layout/dialog_settings_language.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/dialog_settings_language.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/layout/dialog_settings_theme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/dialog_settings_theme.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/layout/item_current.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/item_current.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/layout/item_detail_log.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/item_detail_log.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/layout/item_done.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/item_done.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/layout/main_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/main_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/layout/main_detail_log.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/main_detail_log.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/layout/main_form.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/main_form.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/layout/main_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/main_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/layout/main_home_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/main_home_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/layout/main_image_crop.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/main_image_crop.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/layout/main_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/main_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/layout/main_settings_about.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/main_settings_about.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/layout/main_settings_donate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/main_settings_donate.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/layout/view_no_data_current.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/view_no_data_current.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/layout/view_no_data_done.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/view_no_data_done.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/layout/view_no_transaction.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/view_no_transaction.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/menu/crop_option_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/menu/crop_option_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/menu/main_option_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/menu/main_option_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-anydpi-v26/app_logo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-anydpi-v26/app_logo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-anydpi-v26/app_logo_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-anydpi-v26/app_logo_round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-hdpi/app_logo.webp" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-hdpi/app_logo.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-hdpi/app_logo_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-hdpi/app_logo_round.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-mdpi/app_logo.webp" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-mdpi/app_logo.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-mdpi/app_logo_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-mdpi/app_logo_round.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-xhdpi/app_logo.webp" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-xhdpi/app_logo.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-xhdpi/app_logo_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-xhdpi/app_logo_round.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-xxhdpi/app_logo.webp" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-xxhdpi/app_logo.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-xxhdpi/app_logo_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-xxhdpi/app_logo_round.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-xxxhdpi/app_logo.webp" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-xxxhdpi/app_logo.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-xxxhdpi/app_logo_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-xxxhdpi/app_logo_round.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/navigation/navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/navigation/navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/values-en/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/values-en/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/values/app_logo_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/values/app_logo_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/values/attrs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/values/attrs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/xml/file_paths.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/xml/file_paths.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/xml/locale_config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/xml/locale_config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/main/res/xml/root_preferences.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/xml/root_preferences.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation-module/src/test/java/app/cicilan/presentation/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=Default, isTemplate=false, identifier=serial=emulator-5554;connection=86d4e4b2)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=Default, isTemplate=false, identifier=serial=emulator-5554;connection=0c97e7a3)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -53,7 +676,12 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Cicilan" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -101,12 +729,12 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Muhammad-Jafar/ANBA-Cicilanku.git",
-    "accountId": "ad6639fe-0f55-4bf6-9147-13f07b10867b"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Muhammad-Jafar/ANBA-Cicilanku.git&quot;,
+    &quot;accountId&quot;: &quot;ad6639fe-0f55-4bf6-9147-13f07b10867b&quot;
   }
-}]]></component>
+}</component>
   <component name="KotlinCodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
@@ -208,7 +836,7 @@
     "jdk.selected.JAVA_MODULE": "zulu-17",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/Inisialku/AndroidStudioProjects/Cicilan/app/src/test/java",
-    "last_opened_file_path": "C:/Users/Inisialku/AndroidStudioProjects/KomiteKu",
+    "last_opened_file_path": "C:/Users/131po/IdeaProjects/ANBA-Cicilanku/data/component/src/main/java/app/cicilan",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -218,7 +846,7 @@
     "recommended.upgrade.do.not.ask.for.project": "true",
     "recommended.upgrade.last.time.stamp": "1681545435865",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.language.Kotlin"
+    "settings.editor.selected.configurable": "preferences.fileTypes"
   },
   "keyToStringList": {
     "ExportApk.BuildVariants": [
@@ -238,7 +866,7 @@
   }
 }]]></component>
   <component name="PsdUISettings">
-    <option name="MODULE_TAB" value="Properties" />
+    <option name="MODULE_TAB" value="Default Config" />
     <option name="BUILD_VARIANTS_TAB" value="Build Types" />
     <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
     <option name="LAST_EDITED_BUILD_TYPE" value="debug" />
@@ -283,11 +911,11 @@
       <recent name="jafar.cicilan" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\131po\IdeaProjects\ANBA-Cicilanku\data\component\src\main\java\app\cicilan" />
+      <recent name="C:\Users\131po\IdeaProjects\ANBA-Cicilanku\data\local\src\main\java\app\cicilan" />
       <recent name="C:\Users\Inisialku\AndroidStudioProjects\Cicilan\presentation-module\src\main\java\app\cicilan\presentation" />
       <recent name="C:\Users\Inisialku\AndroidStudioProjects\Cicilan\data-module\component\src\main\res" />
       <recent name="C:\Users\Inisialku\AndroidStudioProjects\Cicilan\data-module\component\src\main\res\values-night" />
-      <recent name="C:\Users\Inisialku\AndroidStudioProjects\Cicilan\data-module\component\src\main\res\values" />
-      <recent name="C:\Users\Inisialku\AndroidStudioProjects\Cicilan\data-module\component\src\main\res\values-en" />
     </key>
     <key name="android.template.1282230599">
       <recent name="jafar.cicilan.ui.main.adding" />
@@ -318,11 +946,58 @@
     <key name="android.template.-2059281846">
       <recent name="jafar.cicilan.features.main.adding" />
     </key>
+    <key name="K2MoveDeclarationsDialog.RECENT_PACKAGE_KEY">
+      <recent name="app.cicilan.repositories.contracts" />
+      <recent name="app.cicilan.local.db" />
+    </key>
     <key name="android.template.-598204275">
       <recent name="jafar.cicilan.ui.main.detail" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
+    <configuration name="ANBA-Cicilanku.Cicilan.data.component" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="ANBA-Cicilanku.Cicilan.data.component" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="app-module" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="Cicilan.app-module" />
       <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
@@ -368,6 +1043,178 @@
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="Cicilan.app" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="data.local" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Cicilan.data.local" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="model.entities" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Cicilan.model.entities" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="model.repositories" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Cicilan.model.repositories" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="model.usecases" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Cicilan.model.usecases" />
       <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -569,6 +1416,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660496436701</updated>
       <workItem from="1749959061988" duration="603000" />
+      <workItem from="1749960560770" duration="14619000" />
     </task>
     <task id="LOCAL-00001" summary="Second commit">
       <option name="closed" value="true" />
@@ -594,7 +1442,23 @@
       <option name="project" value="LOCAL" />
       <updated>1699619970976</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update dependencies">
+      <option name="closed" value="true" />
+      <created>1749961025684</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1749961025684</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update targetSDK">
+      <option name="closed" value="true" />
+      <created>1749961086227</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749961086227</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -618,7 +1482,9 @@
     </ignored-roots>
     <MESSAGE value="Second commit" />
     <MESSAGE value="Refactoring ui" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring ui" />
+    <MESSAGE value="update dependencies" />
+    <MESSAGE value="update targetSDK" />
+    <option name="LAST_COMMIT_MESSAGE" value="update targetSDK" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

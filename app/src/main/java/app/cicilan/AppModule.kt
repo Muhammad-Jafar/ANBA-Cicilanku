@@ -3,30 +3,37 @@ package app.cicilan
 import android.app.Application
 import androidx.datastore.preferences.core.PreferenceDataStoreFactory
 import androidx.datastore.preferences.preferencesDataStoreFile
-import androidx.room.Room
-import app.cicilan.db.CicilanDb
-import app.cicilan.preference.StoreData
-import app.cicilan.presentation.DetailViewModel
-import app.cicilan.presentation.HomeViewModel
-import app.cicilan.presentation.MainActivity
-import app.cicilan.presentation.home.HomeFragment
-import app.cicilan.presentation.home.MainListFragment
-import app.cicilan.presentation.home.detail.DetailFragment
-import app.cicilan.presentation.home.detail.DetailLogFragment
-import app.cicilan.presentation.settings.about.AboutFragment
-import app.cicilan.presentation.settings.donate.DonateFragment
-import app.cicilan.repositories.CicilanLogRepository
-import app.cicilan.repositories.CicilanRepository
-import app.cicilan.repositories.CicilanViewerRepository
-import app.cicilan.repository.CicilanLogRepoImpl
-import app.cicilan.repository.CicilanRepoImpl
-import app.cicilan.repository.CicilanViewerRepoImpl
+import app.cicilan.local.db.provideDao
+import app.cicilan.local.db.provideDatabase
+import app.cicilan.local.preference.StoreData
+import app.cicilan.navigation.DetailViewModel
+import app.cicilan.navigation.FormViewModel
+import app.cicilan.navigation.HomeViewModel
+import app.cicilan.navigation.MainActivity
+import app.cicilan.navigation.SettingsViewModel
+import app.cicilan.navigation.home.HomeFragment
+import app.cicilan.navigation.home.MainListFragment
+import app.cicilan.navigation.home.detail.DetailFragment
+import app.cicilan.navigation.home.detail.DetailLogFragment
+import app.cicilan.navigation.settings.about.AboutFragment
+import app.cicilan.navigation.settings.donate.DonateFragment
+import app.cicilan.repositories.contracts.CicilanLogRepository
+import app.cicilan.repositories.contracts.CicilanRepository
+import app.cicilan.repositories.contracts.CicilanViewerRepository
+import app.cicilan.repositories.repository.CicilanLogRepoImpl
+import app.cicilan.repositories.repository.CicilanRepoImpl
+import app.cicilan.repositories.repository.CicilanViewerRepoImpl
 import app.cicilan.usecases.CountCicilanUseCase
 import app.cicilan.usecases.GetListCicilanLogUseCase
 import com.google.android.material.color.DynamicColors
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
 import org.koin.android.ext.koin.androidContext
+import org.koin.android.ext.koin.androidLogger
 import org.koin.androidx.fragment.dsl.fragment
 import org.koin.androidx.fragment.koin.fragmentFactory
+import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.androidx.viewmodel.dsl.viewModelOf
 import org.koin.core.context.startKoin
 import org.koin.core.module.dsl.bind
@@ -45,60 +52,70 @@ class AppModule : Application() {
 
         DynamicColors.applyToActivitiesIfAvailable(this)
 
-        val fragmentModule = module {
-            scope<MainActivity> {
-                fragment { HomeFragment() }
-                fragment { MainListFragment() }
-                fragment { DetailFragment() }
-                fragment { DetailLogFragment() }
-                fragment { AboutFragment() }
-                fragment { DonateFragment() }
-            }
-        }
-
-        val databaseModule = module {
-            single {
-                Room.databaseBuilder(androidContext(), CicilanDb::class.java, "cicilan")
-                    .fallbackToDestructiveMigration()
-                    .build()
-            }
-            single { get<CicilanDb>().cicilanDao() }
-        }
-
-        val dataStoreModule = module {
-            single {
-                PreferenceDataStoreFactory.create {
-                    androidContext().preferencesDataStoreFile("CicilanDataStore")
+        val fragmentViewModule =
+            module {
+                scope<MainActivity> {
+                    fragment { HomeFragment() }
+                    fragment { MainListFragment() }
+                    fragment { DetailFragment() }
+                    fragment { DetailLogFragment() }
+                    fragment { AboutFragment() }
+                    fragment { DonateFragment() }
                 }
             }
-            single { StoreData(get()) }
-        }
 
-        val repositoryModule = module {
-            singleOf(::CicilanRepoImpl) { bind<CicilanRepository>() }
-            singleOf(::CicilanViewerRepoImpl) { bind<CicilanViewerRepository>() }
-            singleOf(::CicilanLogRepoImpl) { bind<CicilanLogRepository>() }
-        }
+        val dispatcherKoinModule =
+            module {
+                single { Dispatchers.IO }
+                single { CoroutineScope(SupervisorJob() + Dispatchers.IO) }
+            }
 
-        val usecaseModule = module {
-            singleOf(::GetListCicilanLogUseCase)
-            singleOf(::CountCicilanUseCase)
-        }
+        val databaseModule =
+            module {
+                single { provideDatabase(androidContext()) }
+                single { provideDao(get()) }
+            }
 
-        val viewModelModule = module {
-            viewModelOf(::HomeViewModel)
-            viewModelOf(::DetailViewModel)
-//            viewModel { FormViewModel(get()) }
-//            viewModel { DetailViewModel(get(), get()) }
-//            viewModel { SettingsViewModel(get()) }
-        }
+        val dataStoreModule =
+            module {
+                single {
+                    PreferenceDataStoreFactory.create {
+                        androidContext().preferencesDataStoreFile("CicilanDataStore")
+                    }
+                }
+                single { StoreData(get()) }
+            }
+
+        val repositoryModule =
+            module {
+                singleOf(::CicilanRepoImpl) { bind<CicilanRepository>() }
+                singleOf(::CicilanViewerRepoImpl) { bind<CicilanViewerRepository>() }
+                singleOf(::CicilanLogRepoImpl) { bind<CicilanLogRepository>() }
+            }
+
+        val usecaseModule =
+            module {
+                singleOf(::GetListCicilanLogUseCase)
+                singleOf(::CountCicilanUseCase)
+            }
+
+        val viewModelModule =
+            module {
+                viewModelOf(::HomeViewModel)
+                viewModelOf(::DetailViewModel)
+                viewModel { FormViewModel(get()) }
+                viewModel { DetailViewModel(/*get(), get()*/) }
+                viewModel { SettingsViewModel(get()) }
+            }
 
         startKoin {
+            androidLogger()
             androidContext(this@AppModule)
             fragmentFactory()
             modules(
                 listOf(
-                    fragmentModule,
+                    dispatcherKoinModule,
+                    fragmentViewModule,
                     databaseModule,
                     dataStoreModule,
                     repositoryModule,

@@ -10,17 +10,14 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/data-module" />
-            <option value="$PROJECT_DIR$/data-module/component" />
-            <option value="$PROJECT_DIR$/data-module/db" />
-            <option value="$PROJECT_DIR$/data-module/preference" />
-            <option value="$PROJECT_DIR$/data-module/repository" />
-            <option value="$PROJECT_DIR$/data-module/util" />
-            <option value="$PROJECT_DIR$/domain-module" />
-            <option value="$PROJECT_DIR$/domain-module/entities" />
-            <option value="$PROJECT_DIR$/domain-module/repositories" />
-            <option value="$PROJECT_DIR$/domain-module/usecases" />
-            <option value="$PROJECT_DIR$/presentation-module" />
+            <option value="$PROJECT_DIR$/data" />
+            <option value="$PROJECT_DIR$/data/component" />
+            <option value="$PROJECT_DIR$/data/local" />
+            <option value="$PROJECT_DIR$/model" />
+            <option value="$PROJECT_DIR$/model/entities" />
+            <option value="$PROJECT_DIR$/model/repositories" />
+            <option value="$PROJECT_DIR$/model/usecases" />
+            <option value="$PROJECT_DIR$/navigation" />
           </set>
         </option>
       </GradleProjectSettings>

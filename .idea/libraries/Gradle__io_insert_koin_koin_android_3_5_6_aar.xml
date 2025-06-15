@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: io.insert-koin:koin-android:3.5.6@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/4819d5713c251db63498d1b60601bae5/transformed/koin-android-3.5.6/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/4819d5713c251db63498d1b60601bae5/transformed/koin-android-3.5.6/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

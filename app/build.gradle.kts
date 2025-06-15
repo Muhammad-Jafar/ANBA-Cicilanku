@@ -1,18 +1,25 @@
 plugins {
-    id("com.android.application")
+    /*id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("androidx.navigation.safeargs")
-    id("com.google.devtools.ksp")
+    id("com.google.devtools.ksp")*/
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.nav.safe.args)
+    alias(libs.plugins.kotlin.ksp)
 }
 
 android {
     namespace = "app.cicilan.app"
-    compileSdk = 36
+    compileSdk = libs.versions.compileSdk.get()
+        .toInt()
 
     defaultConfig {
         applicationId = "app.cicilan.app"
-        minSdk = 25
-        targetSdk = 36
+        minSdk = libs.versions.minSdk.get()
+            .toInt()
+        targetSdk = libs.versions.compileSdk.get()
+            .toInt()
         versionCode = 7
         versionName = "1.1.0"
 
@@ -38,7 +45,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = JavaVersion.VERSION_17.toString()
     }
     buildFeatures {
         viewBinding = true
@@ -51,44 +58,39 @@ android {
 }
 
 dependencies {
-    implementation(project(":data-module:component"))
-    implementation(project(":data-module:db"))
-    implementation(project(":data-module:preference"))
-    implementation(project(":data-module:repository"))
-    implementation(project(":data-module:util"))
-    implementation(project(":domain-module:entities"))
-    implementation(project(":domain-module:repositories"))
-    implementation(project(":domain-module:usecases"))
-    implementation(project(":presentation-module"))
+    implementation(project(":data:local"))
+    implementation(project(":data:component"))
+    implementation(project(":model:entities"))
+    implementation(project(":model:repositories"))
+    implementation(project(":model:usecases"))
+    implementation(project(":navigation"))
 
     api(libs.bundles.koin)
-
     api(libs.bundles.commoncore)
     api(libs.bundles.lifecycle)
     api(libs.bundles.activityfragment)
     api(libs.bundles.navcomponent)
     api(libs.bundles.coroutines)
-    api(libs.bundles.room)
-    ksp(libs.room.ksp)
+    api(libs.datastore.preference)
+    /*api(libs.bundles.room)
+    ksp(libs.room.compiler)*/
 
-    // Unit Testing
+    /*implementation(libs.constraint.layout)
+    implementation(libs.recycleview) // RecycleView
+    implementation(libs.viewpager2) // View Pager
+    implementation(libs.preference) // Preference Screen Setting
+    implementation(libs.splashscreen) // Splashscreen*/
+
+    /*// Unit Testing
     testImplementation(libs.bundles.unittest)
 
     // Testing
     testImplementation(libs.bundles.uitest)
     testImplementation(libs.bundles.roomtest)
-    testImplementation(libs.bundles.coroutinetest)
-
-    implementation(libs.constraint.layout)
-    implementation(libs.recycleview) // RecycleView
-
-    implementation(libs.datastore.preference) // datastore
-    implementation(libs.viewpager2) // View Pager
-    implementation(libs.preference) // Preference Screen Setting
-    implementation(libs.splashscreen) // Splashscreen
+    testImplementation(libs.bundles.coroutinetest)*/
 
     // Crop Image Library
-    implementation(libs.android.image.cropper)
+    //implementation(libs.android.image.cropper)
 
     // Lottie animation
     // implementation 'com.airbnb.android:lottie:6.1.0'

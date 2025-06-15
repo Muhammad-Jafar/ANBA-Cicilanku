@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+  <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+      android:id="@+id/drag_handle"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:alpha=".4"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+  <TextView
+      android:id="@+id/confirmTitle"
+      style="@style/HeadingSubTitle"
+      android:layout_marginTop="24dp"
+      android:text="@string/change_theme"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+  <app.cicilan.component.customview.button.CustomCheckbox
+      android:id="@+id/defaultMode"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/drag_handle"
+      app:subtitleState="@string/following_system"
+      app:titleState="@string/default_mode"/>
+
+  <com.google.android.material.divider.MaterialDivider
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:dividerColor="?attr/colorCustomContainer"
+      app:dividerInsetEnd="16dp"
+      app:dividerInsetStart="64dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/defaultMode"/>
+
+  <app.cicilan.component.customview.button.CustomCheckbox
+      android:id="@+id/lightMode"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/defaultMode"
+      app:subtitleState="@string/for_day_use"
+      app:titleState="@string/light_mode"/>
+
+  <com.google.android.material.divider.MaterialDivider
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:dividerColor="?attr/colorCustomContainer"
+      app:dividerInsetEnd="16dp"
+      app:dividerInsetStart="64dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/lightMode"/>
+
+  <app.cicilan.component.customview.button.CustomCheckbox
+      android:id="@+id/darkMode"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/lightMode"
+      app:subtitleState="@string/for_night_use"
+      app:titleState="@string/dark_mode"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

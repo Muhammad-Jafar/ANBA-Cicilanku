@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.datastore:datastore-preferences-android:1.1.7@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/8.11.1/transforms/4a94f7867d4330c12f4541f614130509/transformed/datastore-preferences-release/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/4a94f7867d4330c12f4541f614130509/transformed/datastore-preferences-release/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.11.1/transforms/4a94f7867d4330c12f4541f614130509/transformed/datastore-preferences-release/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
