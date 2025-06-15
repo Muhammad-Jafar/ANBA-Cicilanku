@@ -7,14 +7,14 @@ plugins {
 
 android {
     namespace = "app.cicilan.app"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "app.cicilan.app"
         minSdk = 25
-        targetSdk = 34
-        versionCode = 6
-        versionName = "1.1.6"
+        targetSdk = 36
+        versionCode = 7
+        versionName = "1.1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
