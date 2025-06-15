@@ -6,6 +6,7 @@ import app.cicilan.component.util.runInBackground
 import app.cicilan.entities.ItemLog
 import app.cicilan.entities.State
 import app.cicilan.repositories.contracts.CicilanRepository
+import app.cicilan.repositories.contracts.SettingRepository
 import app.cicilan.usecases.CountCicilanUseCase
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.map
@@ -126,10 +127,13 @@ class DetailViewModel(
     fun delete(cicilanId: String) = runInBackground { repo.delete(cicilanId) }*/
 }
 
-class SettingsViewModel(private val repo: CicilanRepository) : MainViewModel() {
-    /*  val getThemeValue = repo.getThemeValue
-      fun saveThemeValue(value: Int) = runInBackground { repo.saveThemeValue(value) }
+class SettingsViewModel(private val repo: SettingRepository) : MainViewModel() {
+    val getTheme = repo.getTheme()
+    val getLanguage = repo.getLang()
 
-      val getLangValue = repo.getLangValue
-      fun saveLangValue(value: String) = runInBackground { repo.saveLangValue(value) }*/
+    fun saveThemeValue(value: Int) =
+        runInBackground { repo.saveTheme(value) }
+
+    fun saveLangValue(value: String) =
+        runInBackground { repo.saveLang(value) }
 }

@@ -46,5 +46,5 @@ dependencies {
 
     api(libs.core.ktx)
     api(libs.room.runtime)
-
+    api(libs.datastore.preference)
 }

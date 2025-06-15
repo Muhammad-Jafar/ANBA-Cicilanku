@@ -10,14 +10,14 @@ import kotlinx.coroutines.flow.map
 
 class StoreData(private val store: DataStore<Preferences>) {
 
-    suspend fun saveLangValue(newValue: String) = store.edit { it[langValue] = newValue }
-    fun getLangValue(): Flow<String> = store.data.map { it[langValue] ?: Constanta.DEFAULT_LANGUAGE }
+    suspend fun saveLanguage(newValue: String) = store.edit { it[lang] = newValue }
+    fun getLanguage(): Flow<String> = store.data.map { it[lang] ?: Constanta.DEFAULT_LANGUAGE }
 
-    suspend fun saveThemeValue(newValue: Int) = store.edit { it[themeValue] = newValue }
-    fun getThemeValue(): Flow<Int> = store.data.map { it[themeValue] ?: Constanta.DEFAULT_THEME }
+    suspend fun saveTheme(newValue: Int) = store.edit { it[theme] = newValue }
+    fun getTheme(): Flow<Int> = store.data.map { it[theme] ?: Constanta.DEFAULT_THEME }
 
     companion object {
-        private val themeValue = intPreferencesKey(Constanta.StoreData.Theme.name)
-        private val langValue = stringPreferencesKey(Constanta.StoreData.Language.name)
+        private val theme = intPreferencesKey(Constanta.StoreData.Theme.name)
+        private val lang = stringPreferencesKey(Constanta.StoreData.Language.name)
     }
 }

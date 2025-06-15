@@ -20,9 +20,11 @@ import app.cicilan.navigation.settings.donate.DonateFragment
 import app.cicilan.repositories.contracts.CicilanLogRepository
 import app.cicilan.repositories.contracts.CicilanRepository
 import app.cicilan.repositories.contracts.CicilanViewerRepository
+import app.cicilan.repositories.contracts.SettingRepository
 import app.cicilan.repositories.repository.CicilanLogRepoImpl
 import app.cicilan.repositories.repository.CicilanRepoImpl
 import app.cicilan.repositories.repository.CicilanViewerRepoImpl
+import app.cicilan.repositories.repository.SettingRepoImpl
 import app.cicilan.usecases.CountCicilanUseCase
 import app.cicilan.usecases.GetListCicilanLogUseCase
 import com.google.android.material.color.DynamicColors
@@ -91,6 +93,7 @@ class AppModule : Application() {
                 singleOf(::CicilanRepoImpl) { bind<CicilanRepository>() }
                 singleOf(::CicilanViewerRepoImpl) { bind<CicilanViewerRepository>() }
                 singleOf(::CicilanLogRepoImpl) { bind<CicilanLogRepository>() }
+                singleOf(::SettingRepoImpl) { bind<SettingRepository>() }
             }
 
         val usecaseModule =
