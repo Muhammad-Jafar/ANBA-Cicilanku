@@ -19,6 +19,16 @@
       </config>
     </shared>
     <layouts>
+      <layout url="file://$PROJECT_DIR$/data/component/src/main/res/layout/custom_layout_item.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/drawable/icon_notes.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/navigation/src/main/res/layout/activity_main.xml">
         <config>
           <theme>@android:style/Theme.Material.Light</theme>
@@ -124,6 +134,16 @@
           <theme>@android:style/Theme.Material.Light</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/menu/detail_option_menu.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/navigation/src/main/res/menu/main_option_menu.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/navigation/src/main/res/navigation/navigation.xml">
         <config>
           <theme>@android:style/Theme.Material.Light</theme>
@@ -144,24 +164,69 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4fd29ba-c0c0-4567-a4c4-fbc2545734e6" name="Changes" comment="fix(home): update list cicilan ui flow">
+    <list default="true" id="c4fd29ba-c0c0-4567-a4c4-fbc2545734e6" name="Changes" comment="fix(cicilan): update insert cicilan flow">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/app/Cicilan.app.androidTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/app/Cicilan.app.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/app/Cicilan.app.unitTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/navigation/src/main/res/menu/detail_option_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_10_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_10_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_ktx_1_10_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_ktx_1_10_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_4_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_4_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_7_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_7_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_2_2_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_2_2_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_ktx_1_16_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_ktx_1_16_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_viewtree_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_viewtree_1_0_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_datastore_datastore_android_1_1_7_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_datastore_datastore_android_1_1_7_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_datastore_datastore_core_android_1_1_7_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_datastore_datastore_core_android_1_1_7_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_datastore_datastore_preferences_android_1_1_7_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_datastore_datastore_preferences_android_1_1_7_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_datastore_datastore_preferences_core_android_1_1_7_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_datastore_datastore_preferences_core_android_1_1_7_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_8_8_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_8_8_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_ktx_1_8_8_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_ktx_1_8_8_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data/component/ANBA-Cicilanku.Cicilan.data.component.androidTest~1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data/component/ANBA-Cicilanku.Cicilan.data.component.main~1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data/component/ANBA-Cicilanku.Cicilan.data.component.unitTest~1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data/local/Cicilan.data.local.androidTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/data/local/Cicilan.data.local.androidTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/data/local/Cicilan.data.local.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/data/local/Cicilan.data.local.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/model/entities/Cicilan.model.entities.androidTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/model/entities/Cicilan.model.entities.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/model/repositories/Cicilan.model.repositories.androidTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/model/repositories/Cicilan.model.repositories.androidTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/model/repositories/Cicilan.model.repositories.unitTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/model/usecases/Cicilan.model.usecases.androidTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/model/usecases/Cicilan.model.usecases.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/model/usecases/Cicilan.model.usecases.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/model/usecases/Cicilan.model.usecases.unitTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/navigation/Cicilan.navigation.androidTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/navigation/Cicilan.navigation.androidTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/navigation/Cicilan.navigation.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/navigation/Cicilan.navigation.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/navigation/Cicilan.navigation.unitTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/navigation/Cicilan.navigation.unitTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/presentation-module/Cicilan.navigation.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/cicilan/AppModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/cicilan/AppModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/component/src/main/java/app/cicilan/component/customview/button/CustomButtonMenu.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/java/app/cicilan/component/customview/button/CustomButtonMenu.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/component/src/main/java/app/cicilan/component/customview/button/CustomButtonMenuSecond.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/component/src/main/java/app/cicilan/component/customview/button/CustomButtonMenuThird.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/component/src/main/java/app/cicilan/component/util/Extensions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/component/src/main/java/app/cicilan/component/util/Extensions.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/local/src/main/java/app/cicilan/local/db/CicilanDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/local/src/main/java/app/cicilan/local/db/CicilanDao.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/entities/src/main/java/app/cicilan/entities/Item.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/src/main/java/app/cicilan/entities/Item.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/entities/src/main/java/app/cicilan/entities/ItemLog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/src/main/java/app/cicilan/entities/ItemLog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/repositories/src/main/java/app/cicilan/repositories/contracts/CicilanRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/repositories/src/main/java/app/cicilan/repositories/contracts/CicilanRepository.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/repositories/src/main/java/app/cicilan/repositories/repository/CicilanLogRepoImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/repositories/src/main/java/app/cicilan/repositories/repository/CicilanLogRepoImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/repositories/src/main/java/app/cicilan/repositories/repository/CicilanRepoImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/repositories/src/main/java/app/cicilan/repositories/repository/CicilanRepoImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/form/FormFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/form/FormFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/repositories/src/main/java/app/cicilan/repositories/usecases/InsertCicilanLogUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/model/repositories/src/main/java/app/cicilan/repositories/usecases/InsertCicilanLogUseCase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/MainViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/MainViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/home/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/home/HomeFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/home/MainListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/home/MainListFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/home/current/CurrentAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/home/current/CurrentAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/home/detail/DetailLogAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/home/detail/DetailLogAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/home/done/DoneAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/home/done/DoneAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation/src/main/res/navigation/navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/navigation/navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/home/detail/DetailFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/home/detail/DetailFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/home/detail/DetailLogFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/java/app/cicilan/navigation/home/detail/DetailLogFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigation/src/main/res/layout/main_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/src/main/res/layout/main_detail.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=Default, isTemplate=false, identifier=serial=emulator-5554;connection=0c97e7a3)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=Default, isTemplate=false, identifier=serial=emulator-5554;connection=dd6c5770)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -274,6 +339,7 @@
     "ToolWindowEmulator.ShowToolbar": "false",
     "ToolWindowRunning Devices.ShowToolbar": "false",
     "ToolWindowTODO.ShowToolbar": "false",
+    "android-custom-viewC:/Users/131po/IdeaProjects/ANBA-Cicilanku/data/component/src/main/java/app/cicilan/component/customview/button/CustomButtonMenuSecond.kt_SELECTED": "CustomButtonMenuSecond",
     "android-custom-viewC:/Users/Inisialku/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.6.1/ace9a78b961165396147e8691faa18c1b0e48e20/appcompat-1.6.1-sources.jar!/androidx/appcompat/widget/AppCompatButton.java_SELECTED": "AppCompatButton",
     "android-custom-viewC:/Users/Inisialku/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.6.1/ace9a78b961165396147e8691faa18c1b0e48e20/appcompat-1.6.1-sources.jar!/androidx/appcompat/widget/AppCompatImageView.java_SELECTED": "AppCompatImageView",
     "android-custom-viewC:/Users/Inisialku/.gradle/caches/modules-2/files-2.1/androidx.core/core/1.9.0/a272ed8ec68c43f8c049a8e77b4f662cc4290fa2/core-1.9.0-sources.jar!/androidx/core/widget/NestedScrollView.java_SELECTED": "NestedScrollView",
@@ -338,7 +404,7 @@
     "jdk.selected.JAVA_MODULE": "zulu-17",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/Inisialku/AndroidStudioProjects/Cicilan/app/src/test/java",
-    "last_opened_file_path": "C:/Users/131po/IdeaProjects/ANBA-Cicilanku/data/component/src/main/java/app/cicilan",
+    "last_opened_file_path": "C:/Users/131po/IdeaProjects/ANBA-Cicilanku/navigation/src/main/res/menu",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -353,6 +419,10 @@
   "keyToStringList": {
     "ExportApk.BuildVariants": [
       "release"
+    ],
+    "android-custom-viewC:/Users/131po/IdeaProjects/ANBA-Cicilanku/data/component/src/main/java/app/cicilan/component/customview/button/CustomButtonMenuSecond.kt_CustomButtonMenuSecond_DIMENSIONS": [
+      "1080",
+      "1920"
     ],
     "android-custom-viewC:/Users/Inisialku/AndroidStudioProjects/Cicilan/app/src/main/java/jafar/cicilan/customview/button/CustomCardOptions.kt_CustomCardOptions_DIMENSIONS": [
       "1080",
@@ -392,6 +462,7 @@
       <recent name="jafar.cicilan.data.repository" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="app.cicilan.repositories.usecases" />
       <recent name="app.cicilan.usecases" />
       <recent name="app.cicilan.customview.preference" />
       <recent name="jafar.cicilan.utils" />
@@ -414,11 +485,11 @@
       <recent name="jafar.cicilan" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\131po\IdeaProjects\ANBA-Cicilanku\navigation\src\main\res\menu" />
       <recent name="C:\Users\131po\IdeaProjects\ANBA-Cicilanku\data\component\src\main\java\app\cicilan" />
       <recent name="C:\Users\131po\IdeaProjects\ANBA-Cicilanku\data\local\src\main\java\app\cicilan" />
       <recent name="C:\Users\Inisialku\AndroidStudioProjects\Cicilan\presentation-module\src\main\java\app\cicilan\presentation" />
       <recent name="C:\Users\Inisialku\AndroidStudioProjects\Cicilan\data-module\component\src\main\res" />
-      <recent name="C:\Users\Inisialku\AndroidStudioProjects\Cicilan\data-module\component\src\main\res\values-night" />
     </key>
     <key name="android.template.1282230599">
       <recent name="jafar.cicilan.ui.main.adding" />
@@ -919,7 +990,8 @@
       <option name="presentableId" value="Default" />
       <updated>1660496436701</updated>
       <workItem from="1749959061988" duration="603000" />
-      <workItem from="1749960560770" duration="30351000" />
+      <workItem from="1749960560770" duration="34018000" />
+      <workItem from="1750056750643" duration="7807000" />
     </task>
     <task id="LOCAL-00001" summary="Second commit">
       <option name="closed" value="true" />
@@ -985,7 +1057,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750000125250</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix(cicilan): update insert cicilan flow">
+      <option name="closed" value="true" />
+      <created>1750005689738</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1750005689738</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1014,7 +1094,8 @@
     <MESSAGE value="refactoring modules" />
     <MESSAGE value="fix(setting): fix ui flow" />
     <MESSAGE value="fix(home): update list cicilan ui flow" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(home): update list cicilan ui flow" />
+    <MESSAGE value="fix(cicilan): update insert cicilan flow" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(cicilan): update insert cicilan flow" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

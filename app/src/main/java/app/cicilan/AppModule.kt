@@ -24,8 +24,12 @@ import app.cicilan.repositories.repository.CicilanLogRepoImpl
 import app.cicilan.repositories.repository.CicilanRepoImpl
 import app.cicilan.repositories.repository.SettingRepoImpl
 import app.cicilan.repositories.usecases.CountCicilanUseCase
+import app.cicilan.repositories.usecases.DeleteCicilanUseCase
+import app.cicilan.repositories.usecases.GetCicilanByIdUseCase
 import app.cicilan.repositories.usecases.GetListCicilanLogUseCase
 import app.cicilan.repositories.usecases.GetListCicilanUseCase
+import app.cicilan.repositories.usecases.InsertCicilanLogUseCase
+import app.cicilan.repositories.usecases.InsertCicilanUseCase
 import com.google.android.material.color.DynamicColors
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -34,7 +38,6 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.androidx.fragment.dsl.fragment
 import org.koin.androidx.fragment.koin.fragmentFactory
-import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.androidx.viewmodel.dsl.viewModelOf
 import org.koin.core.context.startKoin
 import org.koin.core.module.dsl.bind
@@ -98,16 +101,19 @@ class AppModule : Application() {
             module {
                 singleOf(::GetListCicilanUseCase)
                 singleOf(::GetListCicilanLogUseCase)
+                singleOf(::GetCicilanByIdUseCase)
                 singleOf(::CountCicilanUseCase)
+                singleOf(::InsertCicilanUseCase)
+                singleOf(::InsertCicilanLogUseCase)
+                singleOf(::DeleteCicilanUseCase)
             }
 
         val viewModelModule =
             module {
                 viewModelOf(::HomeViewModel)
                 viewModelOf(::DetailViewModel)
-                viewModel { FormViewModel(get()) }
-                viewModel { DetailViewModel(/*get(), get()*/) }
-                viewModel { SettingsViewModel(get()) }
+                viewModelOf(::FormViewModel)
+                viewModelOf(::SettingsViewModel)
             }
 
         startKoin {

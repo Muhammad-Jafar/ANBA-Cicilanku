@@ -13,6 +13,7 @@ import kotlinx.coroutines.flow.Flow
 
 interface CicilanRepository {
     fun get(status: String): Flow<List<Item>>
+
     fun getById(id: Int): Flow<Item>
     fun count(status: String): Flow<Int>
     suspend fun insert(data: ModalForm)

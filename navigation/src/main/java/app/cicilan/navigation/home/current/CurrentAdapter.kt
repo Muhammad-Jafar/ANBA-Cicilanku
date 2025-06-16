@@ -8,7 +8,7 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import app.cicilan.component.util.rupiahFormat
+import app.cicilan.component.util.toRupiah
 import app.cicilan.entities.Item
 import app.cicilan.navigation.R
 import app.cicilan.navigation.databinding.ItemCurrentBinding
@@ -47,7 +47,7 @@ class CurrentAdapter :
                 setProgressCompat(items.nominalLunas!!, true)
             }
             sisaCicilanContent.text =
-                rupiahFormat(items.nominalBayar - items.nominalLunas!!)
+                toRupiah(items.nominalBayar - items.nominalLunas!!)
 
             itemView.setOnClickListener {
                 val direction =

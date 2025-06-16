@@ -22,11 +22,11 @@ data class Item(
     @ColumnInfo(name = "image")
     val image: String? = null,
     @ColumnInfo(name = "name")
-    val name: String? = null,
+    val name: String = "",
     @ColumnInfo(name = "thing_name")
-    val thingName: String? = null,
+    val thingName: String = "",
     @ColumnInfo(name = "category")
-    val category: String? = null,
+    val category: String = "",
     @ColumnInfo(name = "price")
     val price: Int = 0,
     @ColumnInfo(name = "uang_muka")
@@ -36,7 +36,7 @@ data class Item(
     @ColumnInfo(name = "nominal_lunas")
     val nominalLunas: Int = 0, // nominal_per_bulan - nominal_bayar
     @ColumnInfo(name = "period")
-    val period: Int? = null,
+    val period: Int = 0,
     @ColumnInfo(name = "tenggat_bayar")
     val tenggatBayar: Int = 0,
     @ColumnInfo(name = "per_bulan")

@@ -16,7 +16,6 @@
             <option value="$PROJECT_DIR$/model" />
             <option value="$PROJECT_DIR$/model/entities" />
             <option value="$PROJECT_DIR$/model/repositories" />
-            <option value="$PROJECT_DIR$/model/usecases" />
             <option value="$PROJECT_DIR$/navigation" />
           </set>
         </option>

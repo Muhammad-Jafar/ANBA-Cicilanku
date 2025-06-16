@@ -44,14 +44,14 @@ import kotlinx.coroutines.launch
 val currentDate = Calendar.getInstance().timeInMillis
 
 /* Format Rupiah Indonesia */
-fun rupiahFormat(number: Int?): String =
+fun toRupiah(number: Int?): String =
     getCurrencyInstance(Locale("in", "ID"))
         .apply { maximumFractionDigits = 0 }
         .format(number)
 
 /* Convert date and time to locale */
-fun Long.format(pattern: String): String =
-    SimpleDateFormat(pattern, Locale.getDefault(Locale.Category.FORMAT)).format(Date(this))
+fun Long?.format(pattern: String): String =
+    SimpleDateFormat(pattern, Locale.getDefault(Locale.Category.FORMAT)).format(Date(this ?: currentDate))
 
 /* Show soft keyboard for EditText */
 fun TextInputEditText.showSoftKeyboard() {
@@ -76,10 +76,10 @@ fun Fragment.popupDialog(title: String, message: String): MaterialAlertDialogBui
         ) { dialog, _ -> dialog.dismiss() }
 
 // /* Hide Soft Keyboard */
- fun TextInputEditText.hideSoftKeyboard() {
+fun TextInputEditText.hideSoftKeyboard() {
     (context.getSystemService(AppCompatActivity.INPUT_METHOD_SERVICE) as InputMethodManager)
         .hideSoftInputFromWindow(this.windowToken, 0)
- }
+}
 
 /* EditText changed event observer */
 fun TextInputEditText.afterInputNumberChanged(afterTextChanged: (Int) -> Unit) =
@@ -161,7 +161,6 @@ fun <T> Flow<T>.mapWithStateInWhileSubscribed(initialValue: T): StateFlow<T> =
             started = SharingStarted.WhileSubscribed(5_000),
             initialValue = initialValue
         )
-
 
 /* Running in background Fragment */
 fun Fragment.runWhenCreated(action: suspend CoroutineScope.() -> Unit) = lifecycleScope.launch {

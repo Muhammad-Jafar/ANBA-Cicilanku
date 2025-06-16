@@ -10,7 +10,7 @@ import app.cicilan.component.util.afterInputNumberChanged
 import app.cicilan.component.util.getNumber
 import app.cicilan.component.util.runWhenResumed
 import app.cicilan.component.util.runWhenStarted
-import app.cicilan.component.util.rupiahFormat
+import app.cicilan.component.util.toRupiah
 import app.cicilan.navigation.BaseFragment
 import app.cicilan.navigation.HomeViewModel
 import app.cicilan.navigation.R
@@ -74,8 +74,8 @@ class HomeFragment : BaseFragment<MainHomeBinding>(MainHomeBinding::inflate) {
             setPositiveButton(getString(R.string.ok_button)) { dialog, _ -> dialog.dismiss() }
         }
         with(dialogForm) {
-            calculateLabel.text = rupiahFormat(0)
-            labaLabel.text = rupiahFormat(0)
+            calculateLabel.text = toRupiah(0)
+            labaLabel.text = toRupiah(0)
             hargaInput.addAutoConverterToMoneyFormat(hargaInputLayout)
             dpInput.addAutoConverterToMoneyFormat(dpInputLayout)
             periodeInput.addAutoConverterToMoneyFormat(periodeInputLayout)
@@ -87,10 +87,10 @@ class HomeFragment : BaseFragment<MainHomeBinding>(MainHomeBinding::inflate) {
                             state.hargaError != null -> getString(R.string.calculating)
                             state.dpError != null -> getString(R.string.calculating)
                             state.periodeError != null -> getString(R.string.calculating)
-                            else -> rupiahFormat(state.isResultThere)
+                            else -> toRupiah(state.isResultThere)
                         }
                         labaLabel.setTextColor(getColor(labaLabel, R.attr.colorLeaf))
-                        labaLabel.text = "+ ".plus(rupiahFormat(labaValue)).plus("/ Bulan")
+                        labaLabel.text = "+ ".plus(toRupiah(labaValue)).plus("/ Bulan")
                     }
                 }
 

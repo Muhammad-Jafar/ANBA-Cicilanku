@@ -1,7 +1,6 @@
 package app.cicilan.navigation.home
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -79,7 +78,6 @@ class MainListFragment : Fragment() {
                         binding.viewEmptyCurrent.visibility = View.GONE
                         recyclerView.visibility = View.VISIBLE
                         adapter.submitList(list)
-                        Log.e("ISI DATA ==>", list.toString())
                     }
                 }
         }

@@ -43,40 +43,4 @@ class CustomButtonMenu : ConstraintLayout {
             }
         }
     }
-    /*init {
-        inflate(context, R.layout.custom_button_menu, this)
-        context.obtainStyledAttributes(attrs, R.styleable.CustomButtonMenu, 0, 0)
-            .apply {
-                val icon = findViewById<ShapeableImageView>(R.id.iconButtonMenu)
-                val title = findViewById<TextView>(R.id.titleButtonMenu)
-                val subtitle = findViewById<TextView>(R.id.subtitleButtonMenu)
-                try {
-                    icon.setImageResource(getResourceId(R.styleable.CustomButtonMenu_icon, 0))
-                    title.text = getString(R.styleable.CustomButtonMenu_title)
-                    subtitle.text = getString(R.styleable.CustomButtonMenu_subtitle)
-                } finally {
-                    recycle()
-                }
-            }
-    }*/
 }
-
-/*
-class CustomButtonMenu(context: Context, attrs: AttributeSet) : ConstraintLayout(context, attrs) {
-    init {
-        inflate(context, R.layout.custom_button_menu, this)
-        context.obtainStyledAttributes(attrs, R.styleable.CustomButtonMenu, 0, 0)
-            .apply {
-                val icon = findViewById<ShapeableImageView>(R.id.iconButtonMenu)
-                val title = findViewById<TextView>(R.id.titleButtonMenu)
-                val subtitle = findViewById<TextView>(R.id.subtitleButtonMenu)
-                try {
-                    icon.setImageResource(getResourceId(R.styleable.CustomButtonMenu_icon, 0))
-                    title.text = getString(R.styleable.CustomButtonMenu_title)
-                    subtitle.text = getString(R.styleable.CustomButtonMenu_subtitle)
-                } finally {
-                    recycle()
-                }
-            }
-    }
-}*/

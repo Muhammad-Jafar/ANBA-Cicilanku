@@ -25,10 +25,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/model/repositories/Cicilan.model.repositories.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/model/repositories/Cicilan.model.repositories.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/model/repositories/Cicilan.model.repositories.main.iml" filepath="$PROJECT_DIR$/.idea/modules/model/repositories/Cicilan.model.repositories.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/model/repositories/Cicilan.model.repositories.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/model/repositories/Cicilan.model.repositories.unitTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/model/usecases/Cicilan.model.usecases.iml" filepath="$PROJECT_DIR$/.idea/modules/model/usecases/Cicilan.model.usecases.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/model/usecases/Cicilan.model.usecases.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/model/usecases/Cicilan.model.usecases.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/model/usecases/Cicilan.model.usecases.main.iml" filepath="$PROJECT_DIR$/.idea/modules/model/usecases/Cicilan.model.usecases.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/model/usecases/Cicilan.model.usecases.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/model/usecases/Cicilan.model.usecases.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/presentation-module/Cicilan.navigation.iml" filepath="$PROJECT_DIR$/.idea/modules/presentation-module/Cicilan.navigation.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/navigation/Cicilan.navigation.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/navigation/Cicilan.navigation.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/navigation/Cicilan.navigation.main.iml" filepath="$PROJECT_DIR$/.idea/modules/navigation/Cicilan.navigation.main.iml" />

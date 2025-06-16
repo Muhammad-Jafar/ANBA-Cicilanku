@@ -19,6 +19,7 @@ class CicilanLogRepoImpl(
         flow {
             val getLog = dao.getListLog(id)
 
-            emit(getLog)
+            if (getLog != null) emit(getLog)
+            else emit(listOf(ItemLog()))
         }
 }

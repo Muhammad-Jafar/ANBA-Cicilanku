@@ -77,13 +77,34 @@
           app:titleMenu="@string/User_category"/>
 
       <app.cicilan.component.customview.layout.CustomLayoutMenu
+              android:id="@+id/sectionThingPrice"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="8dp"
+              app:iconMenu="@drawable/icon_bill_list"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/sectionCategory"
+              app:titleMenu="@string/User_price"/>
+
+      <app.cicilan.component.customview.layout.CustomLayoutMenu
+              android:id="@+id/sectionFirstPay"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:iconMenu="@drawable/icon_bill_list"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/sectionThingPrice"
+              app:titleMenu="@string/User_first_pay"/>
+
+      <app.cicilan.component.customview.layout.CustomLayoutMenu
           android:id="@+id/sectionCreatedAt"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           app:iconMenu="@drawable/icon_date_create"
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@+id/sectionCategory"
+          app:layout_constraintTop_toBottomOf="@+id/sectionFirstPay"
           app:titleMenu="@string/created_at_title"/>
 
       <app.cicilan.component.customview.layout.CustomLayoutMenu
@@ -236,53 +257,6 @@
           app:layout_constraintTop_toBottomOf="@+id/sectionTotalLaba"/>
 
       <TextView
-          android:id="@+id/detailThingTitle"
-          style="@style/BodyTitle"
-          android:layout_marginStart="16dp"
-          android:layout_marginTop="16dp"
-          android:text="@string/detail_barang"
-          android:textColor="?attr/colorPrimary"
-          android:textStyle="bold"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@+id/thirdDivider"/>
-
-      <app.cicilan.component.customview.layout.CustomLayoutItem
-          android:id="@+id/sectionThingPrice"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="8dp"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@+id/detailThingTitle"
-          app:titleItem="@string/User_price"/>
-
-      <app.cicilan.component.customview.layout.CustomLayoutItem
-          android:id="@+id/sectionFirstPay"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@+id/sectionThingPrice"
-          app:titleItem="@string/User_first_pay"/>
-
-      <app.cicilan.component.customview.layout.CustomLayoutItem
-          android:id="@+id/sectionnominalCicilan"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          app:hideDividerItem="true"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@+id/sectionFirstPay"
-          app:titleItem="@string/user_nominal_cicilan"/>
-
-      <com.google.android.material.divider.MaterialDivider
-          android:id="@+id/fourDivider"
-          style="@style/CustomDivider"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@+id/sectionnominalCicilan"/>
-
-      <TextView
           android:id="@+id/detailDebtTitle"
           style="@style/BodyTitle"
           android:layout_marginStart="16dp"
@@ -291,7 +265,7 @@
           android:textColor="?attr/colorPrimary"
           android:textStyle="bold"
           app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@+id/fourDivider"/>
+          app:layout_constraintTop_toBottomOf="@+id/thirdDivider"/>
 
       <app.cicilan.component.customview.layout.CustomLayoutItem
           android:id="@+id/sectionNominalPerBulan"
@@ -338,7 +312,7 @@
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toBottomOf="@+id/sectionTenggat"/>
 
-      <TextView
+      <!--<TextView
           android:id="@+id/moreMenuTitle"
           style="@style/BodyTitle"
           android:layout_marginStart="16dp"
@@ -386,7 +360,7 @@
           style="@style/CustomDivider"
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@+id/deleteButton"/>
+          app:layout_constraintTop_toBottomOf="@+id/deleteButton"/>-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
   </androidx.core.widget.NestedScrollView>

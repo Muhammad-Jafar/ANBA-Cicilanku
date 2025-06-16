@@ -13,9 +13,14 @@ import androidx.room.PrimaryKey
 @Entity()
 data class ItemLog(
     @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "id") val id: Int? = null,
-    @ColumnInfo(name = "cicilan_id") val cicilanId: Int? = null,
-    @ColumnInfo(name = "date") val date: Long? = null,
-    @ColumnInfo(name = "amount") val amount: Int = 0,
-    @ColumnInfo(name = "description") val description: String = "",
+    @ColumnInfo(name = "id")
+    val id: Int? = null,
+    @ColumnInfo(name = "cicilan_id")
+    val cicilanId: Int? = null,
+    @ColumnInfo(name = "date")
+    val date: Long? = null,
+    @ColumnInfo(name = "amount")
+    val amount: Int = 0,
+    @ColumnInfo(name = "description")
+    val description: String = "",
 )

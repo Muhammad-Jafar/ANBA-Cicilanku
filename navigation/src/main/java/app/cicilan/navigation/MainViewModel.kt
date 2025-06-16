@@ -80,7 +80,7 @@ class DetailViewModel(
         .mapWithStateInWhileSubscribed(Item())
 
     fun getCicilanLog(id: Int) = getLog(id)
-        .mapWithStateInWhileSubscribed(ItemLog())
+        .mapWithStateInWhileSubscribed(listOf(ItemLog()))
 
     fun storeCicilanLog(item: ItemLog) =
         runInBackground { storeLog(item) }

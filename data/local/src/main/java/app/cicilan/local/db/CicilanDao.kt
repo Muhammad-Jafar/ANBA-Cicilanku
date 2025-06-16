@@ -22,8 +22,8 @@ interface CicilanDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun store(item: Item)
 
-    @Query("SELECT * FROM ItemLog WHERE id = :id ORDER BY date DESC")
-    fun getListLog(id: Int): List<ItemLog>
+    @Query("SELECT * FROM ItemLog WHERE cicilan_id = :id ORDER BY date DESC")
+    fun getListLog(id: Int): List<ItemLog>?
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun storeLog(itemLog: ItemLog)

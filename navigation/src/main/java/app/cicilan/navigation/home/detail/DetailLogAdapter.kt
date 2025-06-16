@@ -5,6 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import app.cicilan.component.util.format
+import app.cicilan.component.util.toRupiah
 import app.cicilan.entities.ItemLog
 import app.cicilan.navigation.databinding.ItemDetailLogBinding
 
@@ -20,14 +22,13 @@ class DetailLogAdapter :
     inner class ViewHolder(private val binding: ItemDetailLogBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(item: ItemLog) = with(binding) {
-            /* tanggalTransaksi.text = item.tglTransaksiFormat
-             nominalTransaksi.text = item.nominalTransaksiToRupiah
-             noteTransaksi.text = item.catatanTransaksi*/
+            tanggalTransaksi.text = item.date.format("d.MM.YY HH:mm")
+            nominalTransaksi.text = toRupiah(item.amount)
+            noteTransaksi.text = item.description.ifBlank { "-" }
         }
     }
 
     companion object {
-        /* Diff Callback RecycleView for ItemLogEntity*/
         val DIFF_CALLBACK_LOG = object : DiffUtil.ItemCallback<ItemLog>() {
             override fun areItemsTheSame(
                 oldItem: ItemLog,

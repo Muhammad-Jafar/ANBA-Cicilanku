@@ -12,5 +12,5 @@ import app.cicilan.repositories.contracts.CicilanRepository
 class InsertCicilanLogUseCase(
     private val repo: CicilanRepository,
 ) {
-    suspend operator fun invoke(data: ItemLog) = repo.insertLog(ItemLog)
+    suspend operator fun invoke(data: ItemLog) = repo.insertLog(data)
 }
